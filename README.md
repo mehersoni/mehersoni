@@ -2,6 +2,8 @@
   <img src="./assets/header.svg" alt="Meher Soni — Artificial Intelligence · Data Science · Research" width="100%" />
 </p>
 
+<br />
+
 <p align="center">
   <strong>AI and Data Science student researching speech, language, knowledge graphs and trustworthy AI systems.</strong>
   <br />
@@ -9,27 +11,27 @@
 </p>
 
 <p align="center">
-  <a href="mailto:mehersoni06@gmail.com"><img src="https://img.shields.io/badge/Email-mehersoni06%40gmail.com-17151A?style=for-the-badge&logo=gmail&logoColor=C8B8D9&labelColor=17151A&borderColor=2D2933" alt="Email Meher Soni" /></a>
+  <a href="[YOUR_LINKEDIN_URL]"><img src="https://img.shields.io/badge/LinkedIn-Profile-FFFFFF?style=for-the-badge&logo=linkedin&logoColor=55405C&labelColor=FFFFFF&borderColor=BFA9C8" alt="LinkedIn" /></a>
   &nbsp;
-  <a href="[YOUR_LINKEDIN_URL]"><img src="https://img.shields.io/badge/LinkedIn-Profile-17151A?style=for-the-badge&logo=linkedin&logoColor=C8B8D9&labelColor=17151A&borderColor=2D2933" alt="LinkedIn" /></a>
+  <a href="[YOUR_SCHOLAR_URL]"><img src="https://img.shields.io/badge/Google_Scholar-Citations-FFFFFF?style=for-the-badge&logo=google-scholar&logoColor=55405C&labelColor=FFFFFF&borderColor=BFA9C8" alt="Google Scholar" /></a>
   &nbsp;
-  <a href="[YOUR_PORTFOLIO_URL]"><img src="https://img.shields.io/badge/Portfolio-Visit-17151A?style=for-the-badge&logo=firefox&logoColor=C8B8D9&labelColor=17151A&borderColor=2D2933" alt="Portfolio" /></a>
+  <a href="[YOUR_PORTFOLIO_URL]"><img src="https://img.shields.io/badge/Portfolio-Visit-FFFFFF?style=for-the-badge&logo=firefox&logoColor=55405C&labelColor=FFFFFF&borderColor=BFA9C8" alt="Portfolio" /></a>
   &nbsp;
-  <a href="[YOUR_SCHOLAR_URL]"><img src="https://img.shields.io/badge/Google_Scholar-Citations-17151A?style=for-the-badge&logo=google-scholar&logoColor=C8B8D9&labelColor=17151A&borderColor=2D2933" alt="Google Scholar" /></a>
+  <a href="mailto:mehersoni06@gmail.com"><img src="https://img.shields.io/badge/Email-mehersoni06%40gmail.com-FFFFFF?style=for-the-badge&logo=gmail&logoColor=55405C&labelColor=FFFFFF&borderColor=BFA9C8" alt="Email" /></a>
 </p>
 
 <br />
 
-<!-- Dual Degree Education SVG Card -->
+<!-- Education SVG Card -->
 <p align="center">
-  <img src="./assets/card_education.svg" alt="Dual-Degree Education: BIT Mesra & IIT Madras" width="100%" />
+  <img src="./assets/card_education.svg" alt="Education: BIT Mesra & IIT Madras" width="100%" />
 </p>
 
 <br />
 
-<!-- Research & Industry Experience SVG Card -->
+<!-- Experience Timeline SVG Card -->
 <p align="center">
-  <img src="./assets/card_experience.svg" alt="Research & Industry Experience Timeline" width="100%" />
+  <img src="./assets/card_experience.svg" alt="Experience Timeline" width="100%" />
 </p>
 
 <br />
@@ -80,19 +82,19 @@
 
 <br />
 
-<!-- GitHub Activity Stats -->
+<!-- GitHub Activity Stats (Light Theme) -->
 <p align="center">
   <a href="https://github.com/mehersoni">
-    <img src="https://github-readme-stats.vercel.app/api?username=mehersoni&show_icons=true&theme=dark&bg_color=17151A&title_color=A78B9B&text_color=F8F6F2&icon_color=C8B8D9&border_color=2D2933&hide_border=false" height="150" alt="Meher's GitHub Stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=mehersoni&show_icons=true&theme=default&bg_color=FFFFFF&title_color=55405C&text_color=29242C&icon_color=927394&border_color=E9DDEB&hide_border=false" height="150" alt="Meher's GitHub Stats" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/mehersoni">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehersoni&layout=compact&theme=dark&bg_color=17151A&title_color=A78B9B&text_color=F8F6F2&icon_color=C8B8D9&border_color=2D2933&hide_border=false" height="150" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehersoni&layout=compact&theme=default&bg_color=FFFFFF&title_color=55405C&text_color=29242C&icon_color=927394&border_color=E9DDEB&hide_border=false" height="150" alt="Top Languages" />
   </a>
 </p>
 
 <br />
 
 <p align="center">
-  <sub>✦ &nbsp; Designed with restraint &nbsp;·&nbsp; Meher Soni &nbsp;✦</sub>
+  <em>Let's connect and build meaningful things together.</em>
 </p>

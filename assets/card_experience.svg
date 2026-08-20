@@ -1,67 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240" style="background: #17151A; border-radius: 12px; overflow: hidden;">
-  <defs>
-    <linearGradient id="expGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E1A23" />
-      <stop offset="100%" stop-color="#141217" />
-    </linearGradient>
-    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78B9B" />
-      <stop offset="50%" stop-color="#C8B8D9" />
-      <stop offset="100%" stop-color="#E8D6DC" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="230" style="background: #FFFFFF; border-radius: 12px; overflow: hidden;">
+  <rect width="900" height="230" fill="#FFFFFF" rx="12" />
+  <rect width="900" height="230" fill="none" stroke="#E9DDEB" stroke-width="1.5" rx="12" />
 
-  <rect width="900" height="240" fill="url(#expGrad)" rx="12" />
-  <rect width="900" height="240" fill="none" stroke="#2D2733" stroke-width="1.5" rx="12" />
+  <text x="36" y="36" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#927394" letter-spacing="2">EXPERIENCE TIMELINE</text>
+  <line x1="36" y1="46" x2="864" y2="46" stroke="#F1E8F2" stroke-width="1" />
 
-  <text x="40" y="38" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#A78B9B" letter-spacing="2">RESEARCH &amp; INDUSTRY EXPERIENCE</text>
-  <line x1="40" y1="48" x2="860" y2="48" stroke="#2D2733" stroke-width="1" />
-
-  <!-- Connected Roadmap Path -->
-  <path d="M 80 135 L 250 165 L 420 115 L 590 165 L 760 120" fill="none" stroke="url(#pathGrad)" stroke-width="2.5" opacity="0.8" stroke-dasharray="4 2" />
+  <!-- Timeline Connecting Line -->
+  <line x1="80" y1="135" x2="760" y2="135" stroke="#927394" stroke-width="2" opacity="0.6" stroke-dasharray="6 3" />
 
   <!-- Node 1: IIT Ropar -->
   <g transform="translate(80, 135)">
-    <circle cx="0" cy="0" r="14" fill="#25202B" stroke="#C8B8D9" stroke-width="2" />
-    <circle cx="0" cy="0" r="5" fill="#E8D6DC" />
-    <text x="0" y="-24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F8F6F2" text-anchor="middle">IIT Ropar</text>
-    <text x="0" y="-10" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10.5" fill="#A78B9B" text-anchor="middle">Research Intern</text>
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10" fill="#C8B8D9" text-anchor="middle">Speech &amp; Indic G2P</text>
+    <circle cx="0" cy="0" r="16" fill="#F8F4F6" stroke="#BFA9C8" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#55405C" />
+    <text x="0" y="-28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#29242C" text-anchor="middle">IIT Ropar</text>
+    <text x="0" y="-12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="500" fill="#55405C" text-anchor="middle">Research Intern</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#6F6670" text-anchor="middle">Speech &amp; Language AI</text>
   </g>
 
   <!-- Node 2: DRDO / DEAL -->
-  <g transform="translate(250, 165)">
-    <circle cx="0" cy="0" r="14" fill="#25202B" stroke="#A78B9B" stroke-width="2" />
-    <circle cx="0" cy="0" r="5" fill="#C8B8D9" />
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F8F6F2" text-anchor="middle">DRDO / DEAL</text>
-    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10.5" fill="#A78B9B" text-anchor="middle">Defense ASR Intern</text>
-    <text x="0" y="-18" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10" fill="#C8B8D9" text-anchor="middle">Acoustic CNN-LSTM</text>
+  <g transform="translate(250, 135)">
+    <circle cx="0" cy="0" r="16" fill="#F8F4F6" stroke="#BFA9C8" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#55405C" />
+    <text x="0" y="-28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#29242C" text-anchor="middle">DRDO / DEAL</text>
+    <text x="0" y="-12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="500" fill="#55405C" text-anchor="middle">Research Intern</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#6F6670" text-anchor="middle">Defense Speech Recog.</text>
   </g>
 
   <!-- Node 3: IIIT Vadodara -->
-  <g transform="translate(420, 115)">
-    <circle cx="0" cy="0" r="14" fill="#25202B" stroke="#C8B8D9" stroke-width="2" />
-    <circle cx="0" cy="0" r="5" fill="#E8D6DC" />
-    <text x="0" y="-24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F8F6F2" text-anchor="middle">IIIT Vadodara</text>
-    <text x="0" y="-10" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10.5" fill="#A78B9B" text-anchor="middle">Graph ML Intern</text>
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10" fill="#C8B8D9" text-anchor="middle">GraphSAGE +155% Recall</text>
+  <g transform="translate(420, 135)">
+    <circle cx="0" cy="0" r="16" fill="#F8F4F6" stroke="#BFA9C8" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#55405C" />
+    <text x="0" y="-28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#29242C" text-anchor="middle">IIIT Vadodara</text>
+    <text x="0" y="-12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="500" fill="#55405C" text-anchor="middle">Research Intern</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#6F6670" text-anchor="middle">Graph ML &amp; RecSys</text>
   </g>
 
   <!-- Node 4: Svaarogyam -->
-  <g transform="translate(590, 165)">
-    <circle cx="0" cy="0" r="14" fill="#25202B" stroke="#A78B9B" stroke-width="2" />
-    <circle cx="0" cy="0" r="5" fill="#C8B8D9" />
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F8F6F2" text-anchor="middle">Svaarogyam</text>
-    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10.5" fill="#A78B9B" text-anchor="middle">Embedded ML Intern</text>
-    <text x="0" y="-18" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10" fill="#C8B8D9" text-anchor="middle">Optical Sensor Edge SVM</text>
+  <g transform="translate(590, 135)">
+    <circle cx="0" cy="0" r="16" fill="#F8F4F6" stroke="#BFA9C8" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#55405C" />
+    <text x="0" y="-28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#29242C" text-anchor="middle">Svaarogyam</text>
+    <text x="0" y="-12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="500" fill="#55405C" text-anchor="middle">R&amp;D / Embedded ML</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#6F6670" text-anchor="middle">Edge ML Inference</text>
   </g>
 
   <!-- Node 5: MNIT Jaipur -->
-  <g transform="translate(760, 120)">
-    <circle cx="0" cy="0" r="14" fill="#25202B" stroke="#C8B8D9" stroke-width="2" />
-    <circle cx="0" cy="0" r="5" fill="#E8D6DC" />
-    <text x="0" y="-24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F8F6F2" text-anchor="middle">MNIT Jaipur</text>
-    <text x="0" y="-10" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10.5" fill="#A78B9B" text-anchor="middle">Clinical ML Intern</text>
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="10" fill="#C8B8D9" text-anchor="middle">Disease Prediction</text>
+  <g transform="translate(760, 135)">
+    <circle cx="0" cy="0" r="16" fill="#F8F4F6" stroke="#BFA9C8" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#55405C" />
+    <text x="0" y="-28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#29242C" text-anchor="middle">MNIT Jaipur</text>
+    <text x="0" y="-12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="500" fill="#55405C" text-anchor="middle">ML Intern</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#6F6670" text-anchor="middle">Clinical ML</text>
   </g>
 </svg>
