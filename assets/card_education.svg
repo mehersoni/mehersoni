@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="100%" height="190" style="background: #17151A; border-radius: 12px; overflow: hidden;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A23" />
+      <stop offset="100%" stop-color="#141217" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78B9B" />
+      <stop offset="100%" stop-color="#C8B8D9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background & Border -->
+  <rect width="900" height="190" fill="url(#cardGrad)" rx="12" />
+  <rect width="900" height="190" fill="none" stroke="#2D2733" stroke-width="1.5" rx="12" />
+
+  <!-- Section Header Tag -->
+  <text x="40" y="38" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#A78B9B" letter-spacing="2">DUAL-DEGREE EDUCATION</text>
+  <line x1="40" y1="48" x2="860" y2="48" stroke="#2D2733" stroke-width="1" />
+
+  <!-- Left Column: BIT Mesra -->
+  <g transform="translate(40, 65)">
+    <!-- Graduation Cap / Crest Graphic -->
+    <circle cx="24" cy="28" r="20" fill="#25202B" stroke="#3A3243" stroke-width="1" />
+    <path d="M 14 26 L 24 20 L 34 26 L 24 32 Z M 34 26 V 32 M 19 29 V 34 C 19 36 29 36 29 34 V 29" fill="none" stroke="#C8B8D9" stroke-width="1.5" stroke-linecap="round" />
+
+    <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="17" font-weight="600" fill="#F8F6F2">Birla Institute of Technology, Mesra</text>
+    <text x="56" y="44" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#C8B8D9">B.Tech in Artificial Intelligence · 2023–2027</text>
+    
+    <!-- Highlight Badge -->
+    <rect x="56" y="55" width="130" height="24" rx="6" fill="#2A2232" stroke="#A78B9B" stroke-width="0.8" />
+    <text x="121" y="71" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#F8F6F2" text-anchor="middle">SGPA 9.62 / 10</text>
+  </g>
+
+  <!-- Divider Line Between Degrees -->
+  <line x1="450" y1="65" x2="450" y2="165" stroke="#2D2733" stroke-width="1" />
+
+  <!-- Right Column: IIT Madras -->
+  <g transform="translate(490, 65)">
+    <circle cx="24" cy="28" r="20" fill="#25202B" stroke="#3A3243" stroke-width="1" />
+    <path d="M 14 26 L 24 20 L 34 26 L 24 32 Z M 34 26 V 32 M 19 29 V 34 C 19 36 29 36 29 34 V 29" fill="none" stroke="#C8B8D9" stroke-width="1.5" stroke-linecap="round" />
+
+    <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="17" font-weight="600" fill="#F8F6F2">Indian Institute of Technology Madras</text>
+    <text x="56" y="44" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#C8B8D9">B.S. in Data Science · 2024–2028</text>
+    
+    <rect x="56" y="55" width="150" height="24" rx="6" fill="#222532" stroke="#6B8CB0" stroke-width="0.8" />
+    <text x="131" y="71" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#F8F6F2" text-anchor="middle">Dual-Degree Program</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="100%" height="170" style="background: #17151A; border-radius: 12px; overflow: hidden;">
+  <defs>
+    <linearGradient id="tkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A23" />
+      <stop offset="100%" stop-color="#141217" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="170" fill="url(#tkGrad)" rx="12" />
+  <rect width="900" height="170" fill="none" stroke="#2D2733" stroke-width="1.5" rx="12" />
+
+  <text x="40" y="36" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#A78B9B" letter-spacing="2">TECHNICAL TOOLKIT</text>
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#2D2733" stroke-width="1" />
+
+  <g transform="translate(40, 64)">
+    <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#F8F6F2">Speech &amp; Indic NLP</text>
+    <text x="170" y="16" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">Speech Processing · G2P · TTS · ASR · Phoneme Inventories (CLS) · Multi-Script Processing</text>
+
+    <line x1="0" y1="28" x2="820" y2="28" stroke="#26202D" stroke-width="1" />
+
+    <text x="0" y="46" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#F8F6F2">Knowledge &amp; Reasoning</text>
+    <text x="170" y="46" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">Neo4j · Cypher · Py2Neo · GraphSAGE · GraphRAG · Entity-Relation Extraction</text>
+
+    <line x1="0" y1="58" x2="820" y2="58" stroke="#26202D" stroke-width="1" />
+
+    <text x="0" y="76" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#F8F6F2">ML / DL</text>
+    <text x="170" y="76" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">Python · PyTorch · Scikit-learn · TensorFlow · CNN-LSTM · XGBoost · Feature Engineering</text>
+
+    <line x1="0" y1="88" x2="820" y2="88" stroke="#26202D" stroke-width="1" />
+
+    <text x="0" y="106" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#F8F6F2">Embedded / Edge</text>
+    <text x="170" y="106" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">Arduino · ESP-LilyGo · C · Streamlit · Linux · Git</text>
+  </g>
+</svg>

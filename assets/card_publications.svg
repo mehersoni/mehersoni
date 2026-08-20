@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220" style="background: #17151A; border-radius: 12px; overflow: hidden;">
+  <defs>
+    <linearGradient id="pubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A23" />
+      <stop offset="100%" stop-color="#141217" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="220" fill="url(#pubGrad)" rx="12" />
+  <rect width="900" height="220" fill="none" stroke="#2D2733" stroke-width="1.5" rx="12" />
+
+  <text x="40" y="38" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#A78B9B" letter-spacing="2">PUBLICATIONS &amp; RESEARCH</text>
+  <line x1="40" y1="48" x2="860" y2="48" stroke="#2D2733" stroke-width="1" />
+
+  <!-- Pub 1 -->
+  <g transform="translate(40, 68)">
+    <rect x="0" y="0" width="165" height="20" rx="4" fill="#2A2232" stroke="#A78B9B" stroke-width="0.8" />
+    <text x="82" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#F8F6F2" text-anchor="middle">Springer IDBA 2026 · First Author</text>
+    
+    <text x="180" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#F8F6F2">Reducing Hallucinated Legal Citations in LLM Responses for Indian Law</text>
+    <text x="180" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">82% reduction in false citations (CHR: 0.343 → 0.063) · 0.925 Retrieval Reliability Score</text>
+  </g>
+
+  <line x1="40" y1="114" x2="860" y2="114" stroke="#26202D" stroke-width="1" />
+
+  <!-- Pub 2 -->
+  <g transform="translate(40, 126)">
+    <rect x="0" y="0" width="205" height="20" rx="4" fill="#222532" stroke="#6B8CB0" stroke-width="0.8" />
+    <text x="102" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#F8F6F2" text-anchor="middle">HACER 2025 IIIT Vadodara · First Author</text>
+    
+    <text x="220" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#F8F6F2">Knowledge Graph Construction from Review-Based Conversational Data</text>
+    <text x="220" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#C8B8D9">Neo4j graph engineering pipeline with entity-relation extraction and inverse multi-hop traversal</text>
+  </g>
+
+  <line x1="40" y1="172" x2="860" y2="172" stroke="#26202D" stroke-width="1" />
+
+  <!-- Pub 3 -->
+  <g transform="translate(40, 184)">
+    <rect x="0" y="0" width="165" height="20" rx="4" fill="#25202B" stroke="#3A3243" stroke-width="0.8" />
+    <text x="82" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#C8B8D9" text-anchor="middle">Springer IDBA 2026 · Co-Author</text>
+    
+    <text x="180" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#F8F6F2">Explainable Drug Adoption Forecasting using Knowledge Graphs</text>
+  </g>
+</svg>
