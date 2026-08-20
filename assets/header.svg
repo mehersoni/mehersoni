@@ -1,72 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="240" style="background: #17151A; border-radius: 12px; overflow: hidden;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="100%" height="260">
   <defs>
-    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17151A" />
-      <stop offset="60%" stop-color="#2D2131" />
-      <stop offset="100%" stop-color="#3A283F" />
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17151A"/>
+      <stop offset="55%" stop-color="#2A1E31"/>
+      <stop offset="100%" stop-color="#3C2A43"/>
     </linearGradient>
-
-    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#927394" stop-opacity="0.2" />
-      <stop offset="50%" stop-color="#C8B8D9" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#927394" stop-opacity="0.2" />
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8B8D9" stop-opacity="0.0"/>
+      <stop offset="30%" stop-color="#C8B8D9" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#BFA9C8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C8B8D9" stop-opacity="0.0"/>
     </linearGradient>
-
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#927394" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#927394" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#927394" stop-opacity="0.0"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E9DDEB" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#BFA9C8" stop-opacity="0.0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <style>
-      @keyframes waveFlow {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-4px); }
-        100% { transform: translateY(0px); }
-      }
-      @keyframes nodeGlow {
-        0% { opacity: 0.4; r: 4px; }
-        50% { opacity: 0.9; r: 5.5px; }
-        100% { opacity: 0.4; r: 4px; }
-      }
-      .anim-wave { animation: waveFlow 8s ease-in-out infinite; }
-      .anim-node { animation: nodeGlow 4s ease-in-out infinite; }
+      @keyframes wfloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+      @keyframes npulse { 0%,100%{opacity:.45;r:4px} 50%{opacity:1;r:6px} }
+      @keyframes npulse2 { 0%,100%{opacity:.3;r:3.5px} 50%{opacity:.85;r:5px} }
+      @keyframes shimmer { 0%,100%{opacity:.18} 50%{opacity:.35} }
+      .wv1{animation:wfloat 9s ease-in-out infinite}
+      .wv2{animation:wfloat 12s ease-in-out infinite reverse}
+      .np1{animation:npulse 3.8s ease-in-out infinite}
+      .np2{animation:npulse2 5s ease-in-out infinite}
+      .np3{animation:npulse 6s ease-in-out infinite 1s}
+      .sh{animation:shimmer 7s ease-in-out infinite}
     </style>
   </defs>
 
-  <!-- Dark Plum/Charcoal Header Background -->
-  <rect width="1000" height="240" fill="url(#headerBg)" />
-  <rect width="1000" height="240" fill="none" stroke="#46344C" stroke-width="1" rx="12" />
+  <!-- Background -->
+  <rect width="1000" height="260" fill="url(#hbg)" rx="14"/>
 
-  <!-- Animated Speech Waveforms -->
-  <g class="anim-wave">
-    <path d="M 40 175 Q 120 135, 220 165 T 400 150 T 600 170 T 800 145 T 960 165" fill="none" stroke="url(#wave1Grad)" stroke-width="1.8" />
-    <path d="M 20 185 Q 150 145, 300 175 T 520 160 T 740 180 T 980 155" fill="none" stroke="#927394" stroke-width="1.2" opacity="0.3" />
+  <!-- Subtle top gradient sheen -->
+  <rect width="1000" height="90" fill="#FFFFFF" opacity="0.03" rx="14"/>
+
+  <!-- Border -->
+  <rect width="1000" height="260" fill="none" stroke="#4A3254" stroke-width="1.2" rx="14"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="3" height="260" fill="#927394" opacity="0.6" rx="2"/>
+
+  <!-- Subtle background geometry -->
+  <circle cx="900" cy="30" r="120" fill="#927394" opacity="0.04" class="sh"/>
+  <circle cx="100" cy="230" r="80" fill="#C8B8D9" opacity="0.03" class="sh"/>
+
+  <!-- WAVEFORMS -->
+  <g class="wv1">
+    <!-- Main waveform bars representing speech -->
+    <g opacity="0.5">
+      <rect x="36" y="155" width="3" height="14" rx="1.5" fill="#C8B8D9"/>
+      <rect x="43" y="148" width="3" height="28" rx="1.5" fill="#C8B8D9"/>
+      <rect x="50" y="138" width="3" height="48" rx="1.5" fill="#BFA9C8"/>
+      <rect x="57" y="145" width="3" height="34" rx="1.5" fill="#C8B8D9"/>
+      <rect x="64" y="152" width="3" height="20" rx="1.5" fill="#C8B8D9"/>
+      <rect x="71" y="156" width="3" height="12" rx="1.5" fill="#927394" opacity="0.7"/>
+      <rect x="78" y="150" width="3" height="24" rx="1.5" fill="#C8B8D9"/>
+      <rect x="85" y="142" width="3" height="40" rx="1.5" fill="#BFA9C8"/>
+      <rect x="92" y="153" width="3" height="18" rx="1.5" fill="#C8B8D9"/>
+      <rect x="99" y="157" width="3" height="10" rx="1.5" fill="#927394" opacity="0.7"/>
+    </g>
+
+    <!-- Smooth wave curves -->
+    <path d="M 130 175 Q 200 135, 290 168 T 460 155 T 620 172 T 780 148 T 960 168" fill="none" stroke="url(#waveGrad)" stroke-width="1.6"/>
   </g>
 
-  <!-- Knowledge Graph Nodes Art (Right Side) -->
-  <g stroke="#927394" stroke-width="0.8" opacity="0.5">
-    <line x1="740" y1="65" x2="810" y2="45" />
-    <line x1="810" y1="45" x2="890" y2="80" />
-    <line x1="890" y1="80" x2="830" y2="130" />
-    <line x1="830" y1="130" x2="740" y2="65" />
-    <line x1="890" y1="80" x2="950" y2="55" />
-    <line x1="950" y1="55" x2="930" y2="125" />
-    <line x1="930" y1="125" x2="830" y2="130" />
+  <g class="wv2">
+    <path d="M 36 85 Q 160 108, 290 78 T 520 95 T 740 72 T 964 90" fill="none" stroke="url(#waveGrad2)" stroke-width="1.2"/>
   </g>
 
-  <circle cx="740" cy="65" r="4" fill="#C8B8D9" />
-  <circle cx="810" cy="45" r="4.5" fill="#927394" class="anim-node" />
-  <circle cx="890" cy="80" r="5.5" fill="#E9DDEB" class="anim-node" />
-  <circle cx="830" cy="130" r="4" fill="#C8B8D9" />
-  <circle cx="950" cy="55" r="3.5" fill="#927394" />
-  <circle cx="930" cy="125" r="4.5" fill="#E9DDEB" />
+  <!-- Knowledge Graph (right side) -->
+  <g opacity="0.7">
+    <!-- Edges -->
+    <line x1="740" y1="72" x2="808" y2="52" stroke="#927394" stroke-width="0.9" opacity="0.5"/>
+    <line x1="808" y1="52" x2="888" y2="86" stroke="#927394" stroke-width="0.9" opacity="0.5"/>
+    <line x1="888" y1="86" x2="838" y2="140" stroke="#927394" stroke-width="0.9" opacity="0.5"/>
+    <line x1="838" y1="140" x2="740" y2="72" stroke="#927394" stroke-width="0.7" opacity="0.35"/>
+    <line x1="888" y1="86" x2="952" y2="58" stroke="#927394" stroke-width="0.9" opacity="0.5"/>
+    <line x1="952" y1="58" x2="938" y2="132" stroke="#927394" stroke-width="0.7" opacity="0.4"/>
+    <line x1="938" y1="132" x2="838" y2="140" stroke="#927394" stroke-width="0.7" opacity="0.35"/>
+    <line x1="838" y1="140" x2="870" y2="185" stroke="#927394" stroke-width="0.7" opacity="0.3"/>
+    <line x1="938" y1="132" x2="870" y2="185" stroke="#927394" stroke-width="0.7" opacity="0.3"/>
 
-  <!-- Accent Vertical Line -->
-  <line x1="65" y1="45" x2="65" y2="195" stroke="#927394" stroke-width="1.5" opacity="0.4" />
-  <circle cx="65" cy="45" r="2.5" fill="#C8B8D9" />
-  <circle cx="65" cy="195" r="2.5" fill="#C8B8D9" />
+    <!-- Node glows -->
+    <circle cx="888" cy="86" r="18" fill="url(#nodeGlow)" opacity="0.35" class="np1"/>
+    <circle cx="808" cy="52" r="12" fill="url(#nodeGlow)" opacity="0.25" class="np2"/>
 
-  <!-- Typography -->
-  <g transform="translate(90, 0)">
-    <text x="0" y="100" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="600" fill="#F8F4F6" letter-spacing="4">MEHER SONI</text>
-
-    <text x="0" y="136" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#C8B8D9" letter-spacing="1.5">Artificial Intelligence · Data Science · Research</text>
-
-    <text x="0" y="166" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="300" fill="#927394" letter-spacing="1">Speech AI · Indic NLP · Knowledge Graphs · Trustworthy AI</text>
+    <!-- Nodes -->
+    <circle cx="740" cy="72" r="4" fill="#E9DDEB" opacity="0.8"/>
+    <circle cx="808" cy="52" r="5" fill="#BFA9C8" class="np2" filter="url(#glow)"/>
+    <circle cx="888" cy="86" r="6" fill="#E9DDEB" class="np1" filter="url(#glow)"/>
+    <circle cx="838" cy="140" r="4.5" fill="#C8B8D9" opacity="0.85"/>
+    <circle cx="952" cy="58" r="4" fill="#BFA9C8" opacity="0.8"/>
+    <circle cx="938" cy="132" r="5" fill="#E9DDEB" class="np3" filter="url(#glow)"/>
+    <circle cx="870" cy="185" r="3.5" fill="#C8B8D9" opacity="0.7"/>
   </g>
+
+  <!-- Decorative vertical rule -->
+  <line x1="70" y1="52" x2="70" y2="208" stroke="#BFA9C8" stroke-width="1" opacity="0.3"/>
+  <circle cx="70" cy="52" r="3" fill="#BFA9C8" opacity="0.5"/>
+  <circle cx="70" cy="208" r="3" fill="#BFA9C8" opacity="0.5"/>
+
+  <!-- TYPOGRAPHY -->
+  <!-- Name -->
+  <text x="96" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#F8F4F6" letter-spacing="6" opacity="0.97">MEHER SONI</text>
+
+  <!-- Primary subtitle -->
+  <text x="98" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#C8B8D9" letter-spacing="2">Artificial Intelligence · Data Science · Research</text>
+
+  <!-- Thin rule under subtitle -->
+  <line x1="98" y1="162" x2="540" y2="162" stroke="#927394" stroke-width="0.7" opacity="0.45"/>
+
+  <!-- Research focus line -->
+  <text x="99" y="183" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="300" fill="#927394" letter-spacing="1.2">Speech AI · Indic NLP · Knowledge Graphs · Trustworthy AI</text>
+
+  <!-- Small star accents -->
+  <text x="96" y="85" font-family="serif" font-size="10" fill="#BFA9C8" opacity="0.6">✦</text>
 </svg>
