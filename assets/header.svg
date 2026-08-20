@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="100%" height="250" style="background: #17151A; border-radius: 12px; overflow: hidden;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17151A" />
+      <stop offset="50%" stop-color="#1E1A22" />
+      <stop offset="100%" stop-color="#17151A" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78B9B" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#C8B8D9" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#A78B9B" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8B8D9" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#A78B9B" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#E8D6DC" stop-opacity="0.1" />
+    </linearGradient>
+
+    <style>
+      @keyframes floatWave1 {
+        0% { transform: translateY(0px) scaleY(1); }
+        50% { transform: translateY(-4px) scaleY(1.04); }
+        100% { transform: translateY(0px) scaleY(1); }
+      }
+      @keyframes floatWave2 {
+        0% { transform: translateY(0px) scaleY(1); }
+        50% { transform: translateY(5px) scaleY(0.96); }
+        100% { transform: translateY(0px) scaleY(1); }
+      }
+      @keyframes pulseNode {
+        0% { r: 4px; opacity: 0.5; }
+        50% { r: 5.5px; opacity: 0.95; }
+        100% { r: 4px; opacity: 0.5; }
+      }
+      @keyframes pulseGlow {
+        0% { opacity: 0.25; }
+        50% { opacity: 0.6; }
+        100% { opacity: 0.25; }
+      }
+      .wave1 { animation: floatWave1 9s ease-in-out infinite; transform-origin: center; }
+      .wave2 { animation: floatWave2 12s ease-in-out infinite; transform-origin: center; }
+      .node-pulse { animation: pulseNode 4s ease-in-out infinite; }
+      .node-glow { animation: pulseGlow 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="250" fill="url(#bgGrad)" />
+  <rect width="1000" height="250" fill="none" stroke="#2D2733" stroke-width="1" rx="12" />
+
+  <!-- Subtle Audio Waveforms (Speech AI) -->
+  <g class="wave1">
+    <path d="M 50 185 Q 120 145, 200 175 T 350 165 T 500 180 T 650 160 T 800 175 T 950 165" fill="none" stroke="url(#waveGrad1)" stroke-width="1.8" />
+    <path d="M 30 195 Q 150 155, 280 185 T 450 170 T 600 190 T 780 165 T 970 180" fill="none" stroke="url(#waveGrad2)" stroke-width="1.2" />
+  </g>
+  
+  <g class="wave2">
+    <path d="M 70 65 Q 180 95, 300 70 T 480 85 T 660 60 T 840 80 T 960 65" fill="none" stroke="url(#waveGrad2)" stroke-width="1.4" />
+  </g>
+
+  <!-- Sparse Knowledge Graph Nodes (Right Side Art) -->
+  <g stroke="#A78B9B" stroke-width="0.75" opacity="0.45">
+    <line x1="720" y1="70" x2="790" y2="50" />
+    <line x1="790" y1="50" x2="870" y2="85" />
+    <line x1="870" y1="85" x2="810" y2="135" />
+    <line x1="810" y1="135" x2="720" y2="70" />
+    <line x1="870" y1="85" x2="940" y2="60" />
+    <line x1="940" y1="60" x2="920" y2="130" />
+    <line x1="920" y1="130" x2="810" y2="135" />
+    <line x1="810" y1="135" x2="860" y2="175" />
+    <line x1="920" y1="130" x2="860" y2="175" />
+  </g>
+
+  <!-- Graph Node Points -->
+  <circle cx="720" cy="70" r="3.5" fill="#C8B8D9" />
+  <circle cx="790" cy="50" r="4.5" fill="#A78B9B" class="node-pulse" />
+  <circle cx="870" cy="85" r="5" fill="#E8D6DC" class="node-glow" />
+  <circle cx="810" cy="135" r="4" fill="#C8B8D9" />
+  <circle cx="940" cy="60" r="3.5" fill="#A78B9B" />
+  <circle cx="920" cy="130" r="4.5" fill="#E8D6DC" class="node-pulse" />
+  <circle cx="860" cy="175" r="3.5" fill="#C8B8D9" />
+
+  <!-- Geometric Accent Line -->
+  <line x1="60" y1="50" x2="60" y2="200" stroke="#A78B9B" stroke-width="1.5" opacity="0.4" />
+  <circle cx="60" cy="50" r="2.5" fill="#C8B8D9" />
+  <circle cx="60" cy="200" r="2.5" fill="#C8B8D9" />
+
+  <!-- Main Hero Typography -->
+  <g transform="translate(85, 0)">
+    <!-- Name -->
+    <text x="0" y="105" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="600" fill="#F8F6F2" letter-spacing="4">MEHER SONI</text>
+
+    <!-- Primary Subtitle -->
+    <text x="0" y="142" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#C8B8D9" letter-spacing="1.5">Artificial Intelligence · Data Science · Research</text>
+
+    <!-- Secondary Research Focus Subtitle -->
+    <text x="0" y="174" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="300" fill="#A78B9B" letter-spacing="1">Speech AI · Indic NLP · Knowledge Graphs · Trustworthy AI</text>
+  </g>
+</svg>
