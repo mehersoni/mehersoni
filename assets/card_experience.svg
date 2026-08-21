@@ -1,77 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 256" width="100%" height="256">
   <defs>
-    <linearGradient id="tlBg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FDF9FE"/>
+      <stop offset="100%" stop-color="#FBF7FC"/>
     </linearGradient>
-    <linearGradient id="tlLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E9DDEB" stop-opacity="0"/>
-      <stop offset="10%" stop-color="#BFA9C8"/>
-      <stop offset="50%" stop-color="#927394"/>
-      <stop offset="90%" stop-color="#BFA9C8"/>
+    <linearGradient id="tline" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#E9DDEB" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#BFA9C8" stop-opacity="0.8"/>
+      <stop offset="50%"  stop-color="#927394"/>
+      <stop offset="85%"  stop-color="#BFA9C8" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#E9DDEB" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <rect width="900" height="250" fill="url(#tlBg)" rx="14"/>
-  <rect width="900" height="250" fill="none" stroke="#E9DDEB" stroke-width="1.5" rx="14"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#tlLine)" rx="2" opacity="0.6"/>
+  <rect width="900" height="256" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="256" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
+  <rect x="0" y="0" width="900" height="4" fill="url(#tline)" rx="2" opacity="0.5"/>
 
-  <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#BFA9C8" letter-spacing="2.5">EXPERIENCE</text>
-  <line x1="40" y1="44" x2="860" y2="44" stroke="#F1E8F2" stroke-width="1"/>
+  <text x="40" y="36"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="10" font-weight="700" letter-spacing="3"
+    fill="#BFA9C8">EXPERIENCE</text>
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
 
-  <!-- Timeline connecting line -->
-  <line x1="90" y1="140" x2="810" y2="140" stroke="url(#tlLine)" stroke-width="2"/>
+  <!-- Timeline spine -->
+  <line x1="90" y1="148" x2="810" y2="148" stroke="url(#tline)" stroke-width="2.5"/>
 
-  <!-- NODE HELPER: circle cx node-x cy=140, labels above and below -->
+  <!-- ─── NODE POSITIONS: x = 90, 270, 450, 630, 810 ─── -->
 
   <!-- Node 1: IIT Ropar -->
-  <g>
-    <circle cx="90" cy="140" r="20" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.8"/>
-    <circle cx="90" cy="140" r="7" fill="#55405C"/>
-    <!-- Role label above -->
-    <text x="90" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#29242C" text-anchor="middle">IIT Ropar</text>
-    <text x="90" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#55405C" text-anchor="middle" font-weight="600">Research Intern</text>
-    <!-- Role label below -->
-    <text x="90" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#6F6670" text-anchor="middle">Speech &amp; Language AI</text>
-  </g>
+  <circle cx="90" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
+  <circle cx="90" cy="148" r="7"  fill="#55405C"/>
+  <text x="90" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">IIT Ropar</text>
+  <text x="90" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
+  <text x="90" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Speech &amp; Language AI</text>
+  <text x="90" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">Indic TTS · G2P · CLS</text>
 
   <!-- Node 2: DRDO / DEAL -->
-  <g>
-    <circle cx="270" cy="140" r="20" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.8"/>
-    <circle cx="270" cy="140" r="7" fill="#55405C"/>
-    <text x="270" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#29242C" text-anchor="middle">DRDO / DEAL</text>
-    <text x="270" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#55405C" text-anchor="middle" font-weight="600">Research Intern</text>
-    <text x="270" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#6F6670" text-anchor="middle">Defense Speech Recognition</text>
-  </g>
+  <circle cx="270" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
+  <circle cx="270" cy="148" r="7"  fill="#55405C"/>
+  <text x="270" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">DRDO / DEAL</text>
+  <text x="270" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
+  <text x="270" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Defense Speech ASR</text>
+  <text x="270" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">CNN-LSTM · Acoustic ML</text>
 
-  <!-- Node 3: IIIT Vadodara (highlighted — Publications here) -->
-  <g>
-    <circle cx="450" cy="140" r="24" fill="#EDE3F2" stroke="#927394" stroke-width="2"/>
-    <circle cx="450" cy="140" r="9" fill="#55405C"/>
-    <text x="450" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#29242C" text-anchor="middle">IIIT Vadodara</text>
-    <text x="450" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#55405C" text-anchor="middle" font-weight="600">Research Intern</text>
-    <text x="450" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#6F6670" text-anchor="middle">Graph ML &amp; Recommendation</text>
-    <!-- Published badge -->
-    <rect x="395" y="196" width="110" height="20" rx="10" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
-    <text x="450" y="210" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#55405C" text-anchor="middle">✦ 2× Springer First Author</text>
-  </g>
+  <!-- Node 3: IIIT Vadodara — FEATURED (larger, plum ring) -->
+  <circle cx="450" cy="148" r="26" fill="#EDE3F2" stroke="#55405C" stroke-width="2.5"/>
+  <circle cx="450" cy="148" r="10" fill="#55405C"/>
+  <text x="450" y="102" text-anchor="middle" font-family="Georgia, serif"          font-size="14"   font-weight="700" fill="#29242C">IIIT Vadodara</text>
+  <text x="450" y="116" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
+  <text x="450" y="193" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Graph ML &amp; RecSys</text>
+  <text x="450" y="207" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">GraphSAGE · +155% Recall</text>
+  <!-- Published badge -->
+  <rect x="390" y="218" width="120" height="22" rx="11" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
+  <text x="450" y="232" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C">✦ 2 First-Author Papers</text>
 
   <!-- Node 4: Svaarogyam -->
-  <g>
-    <circle cx="630" cy="140" r="20" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.8"/>
-    <circle cx="630" cy="140" r="7" fill="#55405C"/>
-    <text x="630" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#29242C" text-anchor="middle">Svaarogyam</text>
-    <text x="630" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#55405C" text-anchor="middle" font-weight="600">R&amp;D / Embedded ML</text>
-    <text x="630" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#6F6670" text-anchor="middle">Edge ML &amp; Sensors</text>
-  </g>
+  <circle cx="630" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
+  <circle cx="630" cy="148" r="7"  fill="#55405C"/>
+  <text x="630" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">Svaarogyam</text>
+  <text x="630" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">R&amp;D / Embedded ML</text>
+  <text x="630" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Edge ML &amp; Sensors</text>
+  <text x="630" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">Arduino · SVM 83%</text>
 
   <!-- Node 5: MNIT Jaipur -->
-  <g>
-    <circle cx="810" cy="140" r="20" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.8"/>
-    <circle cx="810" cy="140" r="7" fill="#55405C"/>
-    <text x="810" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#29242C" text-anchor="middle">MNIT Jaipur</text>
-    <text x="810" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#55405C" text-anchor="middle" font-weight="600">ML Intern</text>
-    <text x="810" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#6F6670" text-anchor="middle">Clinical ML</text>
-  </g>
+  <circle cx="810" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
+  <circle cx="810" cy="148" r="7"  fill="#55405C"/>
+  <text x="810" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">MNIT Jaipur</text>
+  <text x="810" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">ML Intern</text>
+  <text x="810" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Clinical ML</text>
+  <text x="810" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">RF · SVM · XGBoost</text>
 </svg>

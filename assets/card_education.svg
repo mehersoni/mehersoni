@@ -1,67 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="230">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FDF9FE"/>
+      <stop offset="100%" stop-color="#FBF7FC"/>
     </linearGradient>
-    <linearGradient id="bitAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="accentL" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#55405C"/>
-      <stop offset="100%" stop-color="#7A5E84"/>
+      <stop offset="100%" stop-color="#927394"/>
     </linearGradient>
-    <linearGradient id="iitAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#927394"/>
-      <stop offset="100%" stop-color="#BFA9C8"/>
+    <linearGradient id="accentR" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#BFA9C8"/>
+      <stop offset="100%" stop-color="#E9DDEB"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#55405C" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#55405C" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#55405C" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Card -->
-  <rect width="900" height="200" fill="url(#cardBg)" rx="14"/>
-  <rect width="900" height="200" fill="none" stroke="#E9DDEB" stroke-width="1.5" rx="14"/>
+  <rect width="900" height="230" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="230" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
 
-  <!-- Decorative top rule with gradient -->
-  <rect x="0" y="0" width="900" height="3" fill="url(#bitAccent)" rx="2" opacity="0.5"/>
+  <!-- Top gradient rule -->
+  <rect x="0" y="0" width="900" height="4" fill="url(#divider)" rx="2"/>
 
-  <!-- Section label -->
-  <text x="40" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#BFA9C8" letter-spacing="2.5">EDUCATION</text>
+  <!-- ─── SECTION LABEL ─── -->
+  <text x="40" y="36"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="10" font-weight="700" letter-spacing="3"
+    fill="#BFA9C8">EDUCATION</text>
 
-  <!-- Divider -->
-  <line x1="40" y1="44" x2="860" y2="44" stroke="#F1E8F2" stroke-width="1"/>
+  <!-- Divider line -->
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
 
-  <!-- ═══ BIT MESRA CARD ═══ -->
-  <!-- Left accent strip -->
-  <rect x="40" y="58" width="3" height="110" fill="url(#bitAccent)" rx="1.5"/>
+  <!-- ═══════════ LEFT: BIT MESRA ═══════════ -->
+  <rect x="40" y="60" width="4" height="136" fill="url(#accentL)" rx="2"/>
 
-  <!-- Icon circle -->
-  <circle cx="68" cy="113" r="22" fill="#F8F4F6" stroke="#E9DDEB" stroke-width="1.5"/>
-  <!-- Graduation cap icon -->
-  <polygon points="68,101 55,108 68,115 81,108" fill="none" stroke="#55405C" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="81" y1="108" x2="81" y2="116" stroke="#55405C" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 61 112 V 118 Q 68 122 75 118 V 112" fill="none" stroke="#55405C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Institution name -->
+  <text x="58" y="87"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="16" font-weight="700" fill="#29242C">Birla Institute of Technology, Mesra</text>
 
-  <!-- Text -->
-  <text x="102" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#29242C">Birla Institute of Technology, Mesra</text>
-  <text x="102" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" fill="#6F6670">B.Tech in Artificial Intelligence</text>
-  <text x="102" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#927394">2023 – 2027</text>
+  <!-- Degree -->
+  <text x="58" y="110"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="13" fill="#55405C" font-weight="500">B.Tech in Artificial Intelligence</text>
+
+  <!-- Year -->
+  <text x="58" y="130"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="12" fill="#6F6670">2023 – 2027</text>
 
   <!-- SGPA badge -->
-  <rect x="102" y="130" width="128" height="26" rx="7" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
-  <text x="166" y="147" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">✦ SGPA 9.62 / 10</text>
+  <rect x="58" y="144" width="138" height="30" rx="8" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
+  <text x="127" y="163"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="12" font-weight="700" fill="#55405C" text-anchor="middle">✦ SGPA 9.62 / 10</text>
 
-  <!-- Vertical divider -->
-  <line x1="450" y1="56" x2="450" y2="168" stroke="#EFE5F0" stroke-width="1.2"/>
+  <!-- Vertical separator -->
+  <line x1="450" y1="60" x2="450" y2="196" stroke="#EBE0EE" stroke-width="1"/>
 
-  <!-- ═══ IIT MADRAS CARD ═══ -->
-  <rect x="470" y="58" width="3" height="110" fill="url(#iitAccent)" rx="1.5"/>
+  <!-- ═══════════ RIGHT: IIT MADRAS ═══════════ -->
+  <rect x="470" y="60" width="4" height="136" fill="url(#accentR)" rx="2"/>
 
-  <circle cx="498" cy="113" r="22" fill="#F8F4F6" stroke="#E9DDEB" stroke-width="1.5"/>
-  <polygon points="498,101 485,108 498,115 511,108" fill="none" stroke="#927394" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="511" y1="108" x2="511" y2="116" stroke="#927394" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 491 112 V 118 Q 498 122 505 118 V 112" fill="none" stroke="#927394" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="488" y="87"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="16" font-weight="700" fill="#29242C">Indian Institute of Technology Madras</text>
 
-  <text x="532" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#29242C">Indian Institute of Technology Madras</text>
-  <text x="532" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" fill="#6F6670">B.S. in Data Science</text>
-  <text x="532" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#927394">2024 – 2028</text>
+  <text x="488" y="110"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="13" fill="#927394" font-weight="500">B.S. in Data Science</text>
 
-  <rect x="532" y="130" width="136" height="26" rx="7" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
-  <text x="600" y="147" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">✦ Dual-Degree Program</text>
+  <text x="488" y="130"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="12" fill="#6F6670">2024 – 2028</text>
+
+  <rect x="488" y="144" width="144" height="30" rx="8" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
+  <text x="560" y="163"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="12" font-weight="700" fill="#55405C" text-anchor="middle">✦ Dual-Degree Program</text>
+
+  <!-- ═══════════ BOTTOM: KEY NUMBERS ═══════════ -->
+  <line x1="40" y1="204" x2="860" y2="204" stroke="#EBE0EE" stroke-width="1"/>
+
+  <g transform="translate(40, 210)">
+    <!-- Number 1 -->
+    <text x="0"   y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#55405C">3</text>
+    <text x="17"  y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6F6670" font-weight="400">Springer &amp; conference papers</text>
+
+    <!-- Separator dot -->
+    <circle cx="260" cy="10" r="2" fill="#E9DDEB"/>
+
+    <!-- Number 2 -->
+    <text x="277"  y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#927394">5</text>
+    <text x="294"  y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6F6670">research &amp; industry internships</text>
+
+    <!-- Separator dot -->
+    <circle cx="560" cy="10" r="2" fill="#E9DDEB"/>
+
+    <!-- Number 3 -->
+    <text x="577" y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#BFA9C8">GATE DA 2026 Qualified</text>
+  </g>
 </svg>

@@ -1,56 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435 195" width="100%" height="195">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 212" width="100%" height="212">
   <defs>
-    <linearGradient id="cardBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FDF9FE"/>
+      <stop offset="100%" stop-color="#FBF7FC"/>
     </linearGradient>
-    <linearGradient id="numGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#55405C"/>
-      <stop offset="100%" stop-color="#7A5E84"/>
+      <stop offset="100%" stop-color="#927394"/>
+    </linearGradient>
+    <linearGradient id="footer" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#F3EDF7"/>
+      <stop offset="100%" stop-color="#FDFAFF"/>
     </linearGradient>
   </defs>
 
-  <!-- Card -->
-  <rect width="435" height="195" fill="url(#cardBg1)" rx="14"/>
-  <rect width="435" height="195" fill="none" stroke="#E9DDEB" stroke-width="1.5" rx="14"/>
+  <rect width="440" height="212" fill="url(#bg)" rx="14"/>
+  <rect width="440" height="212" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="14"/>
 
-  <!-- Left accent strip -->
-  <rect x="0" y="0" width="4" height="195" fill="url(#numGrad1)" opacity="0.7" rx="2"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="212" fill="url(#accent)" rx="3"/>
 
-  <!-- Large decorative number -->
-  <text x="24" y="52" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#55405C" opacity="0.12">01</text>
+  <!-- Ghost number -->
+  <text x="320" y="108" font-family="Georgia, serif" font-size="100" font-weight="700" fill="#55405C" opacity="0.045" text-anchor="end">01</text>
 
-  <!-- Project number badge -->
-  <rect x="24" y="22" width="38" height="22" rx="6" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="43" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">01</text>
+  <!-- Number badge -->
+  <rect x="20" y="18" width="42" height="24" rx="7" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="41" y="34" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">01</text>
 
   <!-- Arrow -->
-  <text x="403" y="38" font-family="sans-serif" font-size="18" fill="#BFA9C8">↗</text>
+  <text x="408" y="36" font-family="sans-serif" font-size="20" fill="#DDD0E5">↗</text>
 
   <!-- Title -->
-  <text x="24" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#29242C">NYAYA.AI</text>
+  <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#29242C">NYAYA.AI</text>
 
-  <!-- Thin rule -->
-  <line x1="24" y1="88" x2="411" y2="88" stroke="#F1E8F2" stroke-width="1"/>
+  <!-- Rule -->
+  <line x1="20" y1="87" x2="420" y2="87" stroke="#F0E8F2" stroke-width="1"/>
 
   <!-- Description -->
-  <text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" fill="#6F6670">Graph-constrained legal reasoning</text>
+  <text x="20" y="107" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#6F6670">Graph-constrained legal reasoning</text>
 
   <!-- Tech pills -->
-  <g transform="translate(24, 128)">
-    <rect x="0" y="0" width="80" height="26" rx="13" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-    <text x="40" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#55405C" text-anchor="middle">GraphRAG</text>
+  <rect x="20"  y="126" width="84"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="62"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">GraphRAG</text>
 
-    <rect x="88" y="0" width="58" height="26" rx="13" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-    <text x="117" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#55405C" text-anchor="middle">Neo4j</text>
+  <rect x="112" y="126" width="62"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="143" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Neo4j</text>
 
-    <rect x="154" y="0" width="116" height="26" rx="13" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-    <text x="212" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#55405C" text-anchor="middle">LLM Grounding</text>
-  </g>
+  <rect x="182" y="126" width="120" height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="242" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">LLM Grounding</text>
 
-  <!-- Bottom metric strip -->
-  <rect x="0" y="169" width="435" height="26" fill="#F8F4F6" rx="0"/>
-  <rect x="0" y="169" width="435" height="26" fill="none" stroke="#E9DDEB" stroke-width="0"/>
-  <rect x="0" y="169" width="435" height="3" fill="#EDE3F2"/>
-  <text x="24" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#927394" font-weight="600">82% reduction in false citations · Springer IDBA 2026</text>
+  <!-- Metric footer -->
+  <rect x="0" y="184" width="440" height="28" fill="url(#footer)" rx="0"/>
+  <rect x="0" y="184" width="440" height="1.5" fill="#EBE0EE"/>
+  <rect x="0" y="184" width="440" height="28" fill="none" stroke="none"/>
+  <!-- Round bottom corners -->
+  <rect x="0"   y="184" width="14"  height="28" fill="url(#footer)"/>
+  <rect x="426" y="184" width="14"  height="28" fill="url(#footer)"/>
+
+  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">
+    82% reduction in false citations · Springer IDBA 2026 · First Author
+  </text>
 </svg>

@@ -1,55 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 148" width="100%" height="148">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 162" width="100%" height="162">
   <defs>
-    <linearGradient id="beyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#FDFAFF"/>
       <stop offset="100%" stop-color="#F8F4F6"/>
     </linearGradient>
-    <linearGradient id="beyAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#55405C" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#55405C"/>
-      <stop offset="70%" stop-color="#BFA9C8"/>
-      <stop offset="100%" stop-color="#BFA9C8" stop-opacity="0"/>
+    <linearGradient id="headerBand" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#EDE3F2"/>
+      <stop offset="100%" stop-color="#F8F4F6"/>
     </linearGradient>
   </defs>
 
-  <rect width="900" height="148" fill="url(#beyBg)" rx="14"/>
-  <rect width="900" height="148" fill="none" stroke="#E9DDEB" stroke-width="1.5" rx="14"/>
+  <rect width="900" height="162" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="162" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
 
-  <!-- Header section with subtle background -->
-  <rect x="0" y="0" width="900" height="48" fill="#F3EDF7" opacity="0.5" rx="14"/>
-  <rect x="0" y="44" width="900" height="4" fill="#F3EDF7"/>
+  <!-- Frosted header band -->
+  <rect x="0" y="0" width="900" height="50" fill="url(#headerBand)" rx="16"/>
+  <rect x="0" y="44" width="900" height="6" fill="url(#headerBand)"/>
 
-  <text x="40" y="30" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#55405C" letter-spacing="1">✦ BEYOND THE LAB</text>
-  <text x="456" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#BFA9C8" font-style="italic">interests &amp; distinctions</text>
-  <line x1="40" y1="44" x2="860" y2="44" stroke="url(#beyAccent)" stroke-width="1.5"/>
+  <!-- Section title -->
+  <text x="40" y="30"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="14" font-weight="700" fill="#55405C" letter-spacing="0.5">✦ Beyond the Lab</text>
+  <text x="494" y="30"
+    font-family="'Segoe UI', system-ui, sans-serif"
+    font-size="10.5" fill="#BFA9C8" font-style="italic">distinctions &amp; interests</text>
 
-  <!-- 4 items row -->
-  <!-- Item 1: GATE -->
-  <g transform="translate(40, 62)">
-    <rect x="0" y="0" width="170" height="60" rx="10" fill="#FFFFFF" stroke="#E9DDEB" stroke-width="1.2"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#29242C">GATE DA 2026</text>
-    <text x="16" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#927394">Qualified</text>
-  </g>
+  <line x1="40" y1="50" x2="860" y2="50" stroke="#EBE0EE" stroke-width="1"/>
 
-  <!-- Item 2: Amazon -->
-  <g transform="translate(222, 62)">
-    <rect x="0" y="0" width="202" height="60" rx="10" fill="#FFFFFF" stroke="#E9DDEB" stroke-width="1.2"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#29242C">Amazon ML Summer School</text>
-    <text x="16" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#927394">2026</text>
-  </g>
+  <!-- ─── 4 tiles, spaced at x = 40, 248, 456, 700 ─── -->
 
-  <!-- Item 3: Renowned Shot -->
-  <g transform="translate(436, 62)">
-    <rect x="0" y="0" width="290" height="60" rx="10" fill="#FFFFFF" stroke="#BFA9C8" stroke-width="1.5"/>
-    <rect x="0" y="0" width="290" height="3" fill="#55405C" opacity="0.4" rx="2"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#29242C">Renowned Shot</text>
-    <text x="16" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#6F6670">68th National Shooting Championship · 10M Pistol</text>
-  </g>
+  <!-- Tile 1: GATE DA 2026 -->
+  <rect x="40" y="62" width="186" height="80" rx="12" fill="#FFFFFF" stroke="#EBE0EE" stroke-width="1.2"/>
+  <text x="56" y="90" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#55405C">⬡</text>
+  <text x="84" y="91" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#29242C">GATE DA 2026</text>
+  <text x="84" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#927394">Qualified</text>
+  <text x="56" y="128" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#BFA9C8">Data Science &amp; AI exam</text>
 
-  <!-- Item 4: Skier -->
-  <g transform="translate(738, 62)">
-    <rect x="0" y="0" width="122" height="60" rx="10" fill="#FFFFFF" stroke="#E9DDEB" stroke-width="1.2"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#29242C">Certified Skier</text>
-    <text x="16" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#927394">IISM Gulmarg</text>
-  </g>
+  <!-- Tile 2: Amazon ML Summer School -->
+  <rect x="242" y="62" width="196" height="80" rx="12" fill="#FFFFFF" stroke="#EBE0EE" stroke-width="1.2"/>
+  <text x="258" y="91" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#29242C">Amazon ML Summer School</text>
+  <text x="258" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#927394">2026 · Invited Participant</text>
+  <text x="258" y="128" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#BFA9C8">Advanced ML curriculum</text>
+
+  <!-- Tile 3: Renowned Shot — featured (plum accent top) -->
+  <rect x="454" y="62" width="230" height="80" rx="12" fill="#FFFFFF" stroke="#BFA9C8" stroke-width="1.8"/>
+  <rect x="454" y="62" width="230" height="4" fill="#55405C" rx="2" opacity="0.45"/>
+  <text x="470" y="91" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#29242C">Renowned Shot</text>
+  <text x="470" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6F6670">68th National Shooting Championship</text>
+  <text x="470" y="128" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#BFA9C8">10M Air Pistol · Certified distinction</text>
+
+  <!-- Tile 4: Certified Skier -->
+  <rect x="700" y="62" width="160" height="80" rx="12" fill="#FFFFFF" stroke="#EBE0EE" stroke-width="1.2"/>
+  <text x="716" y="91" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#29242C">Certified Skier</text>
+  <text x="716" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#927394">IISM Gulmarg</text>
+  <text x="716" y="128" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#BFA9C8">Kashmir · Ski certification</text>
 </svg>
