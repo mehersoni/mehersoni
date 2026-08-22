@@ -1,186 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%"   stop-color="#16111E"/>
-      <stop offset="45%"  stop-color="#221630"/>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16111E"/>
+      <stop offset="50%" stop-color="#241731"/>
       <stop offset="100%" stop-color="#3A2548"/>
     </linearGradient>
-    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#E9DDEB"/>
-      <stop offset="100%" stop-color="#55405C"/>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E9DDEB"/>
+      <stop offset="100%" stop-color="#7A5E84"/>
     </linearGradient>
-    <linearGradient id="barGrad2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#BFA9C8"/>
-      <stop offset="100%" stop-color="#3A2548"/>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BFA9C8"/>
+      <stop offset="100%" stop-color="#4A3254"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#C8B8D9" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#C8B8D9" stop-opacity="0"/>
+    <radialGradient id="nglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E9DDEB" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#BFA9C8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#E9DDEB" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#E9DDEB" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="card"><rect width="1000" height="300" rx="16"/></clipPath>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="300" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="250" fill="url(#hbg)" rx="16"/>
+  <rect width="900" height="250" fill="none" stroke="#4E3560" stroke-width="1.5" rx="16"/>
 
-  <!-- Subtle noise texture overlay -->
-  <rect width="1000" height="300" fill="none" stroke="#4E3560" stroke-width="1.2" rx="16"/>
+  <!-- Left accent strip -->
+  <rect x="0" y="0" width="5" height="250" fill="#927394" rx="2.5"/>
 
-  <!-- Left plum accent bar -->
-  <rect x="0" y="0" width="5" height="300" fill="#927394" rx="3" opacity="0.8"/>
+  <!-- Background subtle geometry circles -->
+  <circle cx="780" cy="60" r="140" fill="#BFA9C8" opacity="0.035"/>
+  <circle cx="160" cy="220" r="90" fill="#927394" opacity="0.03"/>
 
-  <!-- Background ambient light blobs -->
-  <circle cx="820" cy="80"  r="160" fill="#BFA9C8" opacity="0.04"/>
-  <circle cx="200" cy="260" r="100" fill="#927394" opacity="0.04"/>
-
-  <!-- ─── WAVEFORM BARS (bottom-anchored at y=248, SMIL animated) ─── -->
-  <g opacity="0.85">
-    <rect x="618" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="14;36;10;42;14" dur="2.1s" repeatCount="indefinite" begin="0s"/>
-      <animate attributeName="y"      values="234;212;238;206;234" dur="2.1s" repeatCount="indefinite" begin="0s"/>
-    </rect>
-    <rect x="630" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="28;12;52;18;28" dur="1.8s" repeatCount="indefinite" begin="0.15s"/>
-      <animate attributeName="y"      values="220;236;196;230;220" dur="1.8s" repeatCount="indefinite" begin="0.15s"/>
-    </rect>
-    <rect x="642" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="46;20;58;24;46" dur="2.4s" repeatCount="indefinite" begin="0.05s"/>
-      <animate attributeName="y"      values="202;228;190;224;202" dur="2.4s" repeatCount="indefinite" begin="0.05s"/>
-    </rect>
-    <rect x="654" width="7" rx="3.5" fill="url(#barGrad2)">
-      <animate attributeName="height" values="20;50;16;44;20" dur="2s"   repeatCount="indefinite" begin="0.3s"/>
-      <animate attributeName="y"      values="228;198;232;204;228" dur="2s"   repeatCount="indefinite" begin="0.3s"/>
-    </rect>
-    <rect x="666" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="38;14;60;22;38" dur="1.9s" repeatCount="indefinite" begin="0.1s"/>
-      <animate attributeName="y"      values="210;234;188;226;210" dur="1.9s" repeatCount="indefinite" begin="0.1s"/>
-    </rect>
-    <rect x="678" width="7" rx="3.5" fill="url(#barGrad2)">
-      <animate attributeName="height" values="10;44;18;52;10" dur="2.2s" repeatCount="indefinite" begin="0.4s"/>
-      <animate attributeName="y"      values="238;204;230;196;238" dur="2.2s" repeatCount="indefinite" begin="0.4s"/>
-    </rect>
-    <rect x="690" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="54;18;40;12;54" dur="2.0s" repeatCount="indefinite" begin="0.25s"/>
-      <animate attributeName="y"      values="194;230;208;236;194" dur="2.0s" repeatCount="indefinite" begin="0.25s"/>
-    </rect>
-    <rect x="702" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="22;48;14;56;22" dur="2.3s" repeatCount="indefinite" begin="0.35s"/>
-      <animate attributeName="y"      values="226;200;234;192;226" dur="2.3s" repeatCount="indefinite" begin="0.35s"/>
-    </rect>
-    <rect x="714" width="7" rx="3.5" fill="url(#barGrad2)">
-      <animate attributeName="height" values="44;10;62;20;44" dur="1.85s" repeatCount="indefinite" begin="0.08s"/>
-      <animate attributeName="y"      values="204;238;186;228;204" dur="1.85s" repeatCount="indefinite" begin="0.08s"/>
-    </rect>
-    <rect x="726" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="16;52;20;36;16" dur="2.15s" repeatCount="indefinite" begin="0.5s"/>
-      <animate attributeName="y"      values="232;196;228;212;232" dur="2.15s" repeatCount="indefinite" begin="0.5s"/>
-    </rect>
-    <rect x="738" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="36;16;58;14;36" dur="2.05s" repeatCount="indefinite" begin="0.12s"/>
-      <animate attributeName="y"      values="212;232;190;234;212" dur="2.05s" repeatCount="indefinite" begin="0.12s"/>
-    </rect>
-    <rect x="750" width="7" rx="3.5" fill="url(#barGrad2)">
-      <animate attributeName="height" values="56;24;42;18;56" dur="2.25s" repeatCount="indefinite" begin="0.45s"/>
-      <animate attributeName="y"      values="192;224;206;230;192" dur="2.25s" repeatCount="indefinite" begin="0.45s"/>
-    </rect>
-    <rect x="762" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="18;46;12;50;18" dur="1.95s" repeatCount="indefinite" begin="0.2s"/>
-      <animate attributeName="y"      values="230;202;236;198;230" dur="1.95s" repeatCount="indefinite" begin="0.2s"/>
-    </rect>
-    <rect x="774" width="7" rx="3.5" fill="url(#barGrad)">
-      <animate attributeName="height" values="42;12;64;16;42" dur="2.1s" repeatCount="indefinite" begin="0.55s"/>
-      <animate attributeName="y"      values="206;236;184;232;206" dur="2.1s" repeatCount="indefinite" begin="0.55s"/>
-    </rect>
-    <rect x="786" width="7" rx="3.5" fill="url(#barGrad2)">
-      <animate attributeName="height" values="26;56;14;48;26" dur="1.8s" repeatCount="indefinite" begin="0.18s"/>
-      <animate attributeName="y"      values="222;192;234;200;222" dur="1.8s" repeatCount="indefinite" begin="0.18s"/>
-    </rect>
+  <!-- ─── SPEECH WAVEFORM SPECTROGRAM BARS (Right side background) ─── -->
+  <g opacity="0.8">
+    <rect x="540" y="165" width="6" height="40" rx="3" fill="url(#bar1)"/>
+    <rect x="550" y="145" width="6" height="60" rx="3" fill="url(#bar2)"/>
+    <rect x="560" y="175" width="6" height="30" rx="3" fill="url(#bar1)"/>
+    <rect x="570" y="130" width="6" height="75" rx="3" fill="url(#bar1)"/>
+    <rect x="580" y="160" width="6" height="45" rx="3" fill="url(#bar2)"/>
+    <rect x="590" y="180" width="6" height="25" rx="3" fill="url(#bar1)"/>
+    <rect x="600" y="140" width="6" height="65" rx="3" fill="url(#bar1)"/>
+    <rect x="610" y="120" width="6" height="85" rx="3" fill="url(#bar2)"/>
+    <rect x="620" y="155" width="6" height="50" rx="3" fill="url(#bar1)"/>
+    <rect x="630" y="170" width="6" height="35" rx="3" fill="url(#bar2)"/>
+    <rect x="640" y="135" width="6" height="70" rx="3" fill="url(#bar1)"/>
+    <rect x="650" y="150" width="6" height="55" rx="3" fill="url(#bar1)"/>
+    <rect x="660" y="175" width="6" height="30" rx="3" fill="url(#bar2)"/>
+    <rect x="670" y="145" width="6" height="60" rx="3" fill="url(#bar1)"/>
+    <rect x="680" y="160" width="6" height="45" rx="3" fill="url(#bar2)"/>
   </g>
 
-  <!-- ─── KNOWLEDGE GRAPH (top-right) ─── -->
-  <g clip-path="url(#card)">
-    <!-- Graph edges -->
-    <line x1="840" y1="52"  x2="900" y2="80"  stroke="#927394" stroke-width="1"   opacity="0.4"/>
-    <line x1="900" y1="80"  x2="870" y2="140" stroke="#927394" stroke-width="1"   opacity="0.35"/>
-    <line x1="870" y1="140" x2="810" y2="110" stroke="#927394" stroke-width="0.8" opacity="0.3"/>
-    <line x1="810" y1="110" x2="840" y2="52"  stroke="#927394" stroke-width="0.8" opacity="0.3"/>
-    <line x1="900" y1="80"  x2="950" y2="50"  stroke="#BFA9C8" stroke-width="1"   opacity="0.35"/>
-    <line x1="950" y1="50"  x2="970" y2="110" stroke="#BFA9C8" stroke-width="0.8" opacity="0.3"/>
-    <line x1="970" y1="110" x2="900" y2="80"  stroke="#BFA9C8" stroke-width="0.8" opacity="0.25"/>
-    <line x1="870" y1="140" x2="920" y2="175" stroke="#927394" stroke-width="0.8" opacity="0.25"/>
+  <!-- ─── KNOWLEDGE GRAPH NETWORK (Top Right) ─── -->
+  <g>
+    <!-- Graph Edges -->
+    <line x1="720" y1="45" x2="780" y2="70" stroke="#927394" stroke-width="1" opacity="0.45"/>
+    <line x1="780" y1="70" x2="750" y2="125" stroke="#927394" stroke-width="1" opacity="0.4"/>
+    <line x1="750" y1="125" x2="690" y2="95" stroke="#927394" stroke-width="0.8" opacity="0.35"/>
+    <line x1="690" y1="95" x2="720" y2="45" stroke="#927394" stroke-width="0.8" opacity="0.35"/>
+    <line x1="780" y1="70" x2="830" y2="45" stroke="#BFA9C8" stroke-width="1" opacity="0.4"/>
+    <line x1="830" y1="45" x2="850" y2="100" stroke="#BFA9C8" stroke-width="0.8" opacity="0.35"/>
+    <line x1="850" y1="100" x2="780" y2="70" stroke="#BFA9C8" stroke-width="0.8" opacity="0.3"/>
+    <line x1="750" y1="125" x2="800" y2="155" stroke="#927394" stroke-width="0.8" opacity="0.3"/>
 
-    <!-- Glow halos -->
-    <circle cx="900" cy="80"  r="22" fill="url(#glow1)"/>
-    <circle cx="840" cy="52"  r="14" fill="url(#glow2)"/>
-    <circle cx="950" cy="50"  r="12" fill="url(#glow2)"/>
+    <!-- Glowing Halos -->
+    <circle cx="780" cy="70" r="20" fill="url(#nglow)"/>
+    <circle cx="720" cy="45" r="14" fill="url(#nglow)"/>
+    <circle cx="830" cy="45" r="12" fill="url(#nglow)"/>
 
-    <!-- Graph nodes -->
-    <circle cx="840" cy="52"  r="4"   fill="#E9DDEB" opacity="0.9">
-      <animate attributeName="r"       values="4;5.5;4"   dur="4s"   repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="4s"   repeatCount="indefinite"/>
-    </circle>
-    <circle cx="900" cy="80"  r="7"   fill="#C8B8D9" filter="url(#subtleGlow)">
-      <animate attributeName="r"       values="7;9;7"     dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="870" cy="140" r="5"   fill="#BFA9C8" opacity="0.85">
-      <animate attributeName="r"       values="5;6.5;5"   dur="5s"   repeatCount="indefinite"/>
-    </circle>
-    <circle cx="810" cy="110" r="3.5" fill="#E9DDEB" opacity="0.7"/>
-    <circle cx="950" cy="50"  r="4.5" fill="#C8B8D9" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="4.5s" repeatCount="indefinite" begin="1s"/>
-    </circle>
-    <circle cx="970" cy="110" r="3"   fill="#BFA9C8" opacity="0.6"/>
-    <circle cx="920" cy="175" r="3"   fill="#927394" opacity="0.5"/>
+    <!-- Nodes -->
+    <circle cx="720" cy="45" r="4" fill="#E9DDEB" opacity="0.95"/>
+    <circle cx="780" cy="70" r="6.5" fill="#C8B8D9" opacity="1"/>
+    <circle cx="750" cy="125" r="5" fill="#BFA9C8" opacity="0.85"/>
+    <circle cx="690" cy="95" r="3.5" fill="#E9DDEB" opacity="0.75"/>
+    <circle cx="830" cy="45" r="4.5" fill="#C8B8D9" opacity="0.85"/>
+    <circle cx="850" cy="100" r="3.5" fill="#BFA9C8" opacity="0.7"/>
+    <circle cx="800" cy="155" r="3" fill="#927394" opacity="0.6"/>
   </g>
 
-  <!-- ─── TYPOGRAPHY ─── -->
-  <!-- Eyebrow label -->
-  <text x="30" y="70"
+  <!-- ─── TYPOGRAPHY & TEXT ─── -->
+  <!-- Eyebrow -->
+  <text x="36" y="58"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
-    font-size="10" font-weight="600" letter-spacing="3.5"
-    fill="#BFA9C8" opacity="0.75">AI · DATA SCIENCE · RESEARCH</text>
+    font-size="10" font-weight="700" letter-spacing="3.5" fill="#BFA9C8" opacity="0.85">AI · DATA SCIENCE · RESEARCH</text>
 
-  <!-- Main name — the hero -->
-  <text x="28" y="148"
+  <!-- Name Hero -->
+  <text x="34" y="122"
     font-family="Georgia, 'Times New Roman', serif"
-    font-size="56" font-weight="700" letter-spacing="4"
-    fill="#F8F4F6">MEHER SONI</text>
+    font-size="48" font-weight="700" letter-spacing="4" fill="#F8F4F6">MEHER SONI</text>
 
-  <!-- Subtitle rule -->
-  <line x1="28" y1="166" x2="500" y2="166" stroke="#55405C" stroke-width="1" opacity="0.5"/>
+  <!-- Subtitle Line -->
+  <line x1="36" y1="138" x2="480" y2="138" stroke="#55405C" stroke-width="1" opacity="0.5"/>
 
-  <!-- Primary subtitle -->
-  <text x="28" y="192"
+  <!-- Subtitle -->
+  <text x="36" y="162"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
-    font-size="15" font-weight="300" letter-spacing="2.5"
-    fill="#C8B8D9">Artificial Intelligence · Data Science · Research</text>
+    font-size="14" font-weight="300" letter-spacing="2" fill="#C8B8D9">Artificial Intelligence · Data Science · Research</text>
 
-  <!-- Research tags -->
-  <text x="29" y="218"
+  <!-- Research Tags -->
+  <text x="36" y="186"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
-    font-size="11.5" font-weight="400" letter-spacing="1"
-    fill="#927394">Speech AI &#160;·&#160; Indic NLP &#160;·&#160; Knowledge Graphs &#160;·&#160; Trustworthy AI</text>
+    font-size="11" font-weight="400" letter-spacing="1" fill="#927394">Speech AI · Indic NLP · Knowledge Graphs · Trustworthy AI</text>
 
-  <!-- Affiliations row -->
-  <text x="29" y="256"
+  <!-- Affiliations Footer -->
+  <text x="36" y="218"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
-    font-size="11" fill="#BFA9C8" opacity="0.6" font-style="italic">
-    BIT Mesra × IIT Madras &#160;·&#160; Published in Springer &#160;·&#160; 5 Research Internships
-  </text>
+    font-size="10.5" fill="#BFA9C8" opacity="0.65" font-style="italic">BIT Mesra × IIT Madras · Published in Springer · 5 Research Internships</text>
 
-  <!-- Corner star -->
-  <text x="580" y="268" font-family="serif" font-size="9" fill="#BFA9C8" opacity="0.4">✦</text>
+  <!-- Star Accent -->
+  <text x="500" y="228" font-family="serif" font-size="9" fill="#BFA9C8" opacity="0.4">✦</text>
 </svg>

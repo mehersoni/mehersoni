@@ -1,4 +1,4 @@
-<a href="https://github.com/mehersoni"><img src="https://raw.githubusercontent.com/mehersoni/mehersoni/main/assets/header.svg" alt="Meher Soni — AI · Data Science · Research" width="100%"/></a>
+<img src="./assets/header.svg" alt="Meher Soni — AI · Data Science · Research" width="100%"/>
 
 <br/>
 
