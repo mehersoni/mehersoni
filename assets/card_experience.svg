@@ -1,73 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 256" width="100%" height="256">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="520">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="#FBF7FC"/>
     </linearGradient>
-    <linearGradient id="tline" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%"   stop-color="#E9DDEB" stop-opacity="0"/>
-      <stop offset="15%"  stop-color="#BFA9C8" stop-opacity="0.8"/>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#55405C"/>
       <stop offset="50%"  stop-color="#927394"/>
-      <stop offset="85%"  stop-color="#BFA9C8" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#E9DDEB" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#BFA9C8"/>
+    </linearGradient>
+    <linearGradient id="topRule" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#55405C" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#55405C"/>
+      <stop offset="75%"  stop-color="#927394"/>
+      <stop offset="100%" stop-color="#927394" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <rect width="900" height="256" fill="url(#bg)" rx="16"/>
-  <rect width="900" height="256" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
-  <rect x="0" y="0" width="900" height="4" fill="url(#tline)" rx="2" opacity="0.5"/>
+  <rect width="900" height="520" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="520" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
+  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.6"/>
 
+  <!-- Section Label -->
   <text x="40" y="36"
     font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="10" font-weight="700" letter-spacing="3"
-    fill="#BFA9C8">EXPERIENCE</text>
+    font-size="10" font-weight="700" letter-spacing="3" fill="#BFA9C8">RESEARCH &amp; INDUSTRY EXPERIENCE</text>
   <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
 
-  <!-- Timeline spine -->
-  <line x1="90" y1="148" x2="810" y2="148" stroke="url(#tline)" stroke-width="2.5"/>
+  <!-- Vertical Timeline Spine -->
+  <line x1="68" y1="78" x2="68" y2="462" stroke="url(#spine)" stroke-width="2.5"/>
 
-  <!-- ─── NODE POSITIONS: x = 90, 270, 450, 630, 810 ─── -->
+  <!-- ═══════════ 5 EQUAL VERTICAL TIMELINE NODES ═══════════ -->
 
-  <!-- Node 1: IIT Ropar -->
-  <circle cx="90" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
-  <circle cx="90" cy="148" r="7"  fill="#55405C"/>
-  <text x="90" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">IIT Ropar</text>
-  <text x="90" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
-  <text x="90" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Speech &amp; Language AI</text>
-  <text x="90" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">Indic TTS · G2P · CLS</text>
+  <!-- NODE 1: IIT Ropar (y = 90) -->
+  <g>
+    <circle cx="68" cy="90" r="15" fill="#F3EDF7" stroke="#55405C" stroke-width="2"/>
+    <circle cx="68" cy="90" r="5.5" fill="#55405C"/>
 
-  <!-- Node 2: DRDO / DEAL -->
-  <circle cx="270" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
-  <circle cx="270" cy="148" r="7"  fill="#55405C"/>
-  <text x="270" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">DRDO / DEAL</text>
-  <text x="270" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
-  <text x="270" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Defense Speech ASR</text>
-  <text x="270" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">CNN-LSTM · Acoustic ML</text>
+    <!-- Content Group -->
+    <text x="100" y="85" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#29242C">IIT Ropar</text>
+    <text x="180" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C">· Research Intern (Speech &amp; Language AI)</text>
+    
+    <text x="100" y="103" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#6F6670">Developed Indic G2P &amp; TTS front-end processing pipelines for regional Indian languages.</text>
+    <text x="100" y="119" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394">Built Phoneme Inventories &amp; CLS mapping across Urdu, Punjabi, and Indian English.</text>
+  </g>
 
-  <!-- Node 3: IIIT Vadodara — FEATURED (larger, plum ring) -->
-  <circle cx="450" cy="148" r="26" fill="#EDE3F2" stroke="#55405C" stroke-width="2.5"/>
-  <circle cx="450" cy="148" r="10" fill="#55405C"/>
-  <text x="450" y="102" text-anchor="middle" font-family="Georgia, serif"          font-size="14"   font-weight="700" fill="#29242C">IIIT Vadodara</text>
-  <text x="450" y="116" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">Research Intern</text>
-  <text x="450" y="193" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Graph ML &amp; RecSys</text>
-  <text x="450" y="207" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">GraphSAGE · +155% Recall</text>
-  <!-- Published badge -->
-  <rect x="390" y="218" width="120" height="22" rx="11" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="450" y="232" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C">✦ 2 First-Author Papers</text>
+  <line x1="100" y1="137" x2="860" y2="137" stroke="#F5F0F6" stroke-width="1"/>
 
-  <!-- Node 4: Svaarogyam -->
-  <circle cx="630" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
-  <circle cx="630" cy="148" r="7"  fill="#55405C"/>
-  <text x="630" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">Svaarogyam</text>
-  <text x="630" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">R&amp;D / Embedded ML</text>
-  <text x="630" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Edge ML &amp; Sensors</text>
-  <text x="630" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">Arduino · SVM 83%</text>
+  <!-- NODE 2: DRDO / DEAL (y = 180) -->
+  <g>
+    <circle cx="68" cy="180" r="15" fill="#F3EDF7" stroke="#55405C" stroke-width="2"/>
+    <circle cx="68" cy="180" r="5.5" fill="#55405C"/>
 
-  <!-- Node 5: MNIT Jaipur -->
-  <circle cx="810" cy="148" r="18" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="2"/>
-  <circle cx="810" cy="148" r="7"  fill="#55405C"/>
-  <text x="810" y="112" text-anchor="middle" font-family="Georgia, serif"          font-size="13"   font-weight="700" fill="#29242C">MNIT Jaipur</text>
-  <text x="810" y="126" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   font-weight="600" fill="#55405C">ML Intern</text>
-  <text x="810" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"   fill="#6F6670">Clinical ML</text>
-  <text x="810" y="198" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" fill="#BFA9C8">RF · SVM · XGBoost</text>
+    <text x="100" y="175" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#29242C">DRDO / DEAL</text>
+    <text x="210" y="175" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C">· Research Intern (Defense Speech ASR)</text>
+
+    <text x="100" y="193" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#6F6670">Researched noise-robust automatic speech recognition systems for tactical communications.</text>
+    <text x="100" y="209" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394">Implemented CNN-LSTM acoustic modeling architectures under low-SNR acoustic environments.</text>
+  </g>
+
+  <line x1="100" y1="227" x2="860" y2="227" stroke="#F5F0F6" stroke-width="1"/>
+
+  <!-- NODE 3: IIIT Vadodara (y = 270) -->
+  <g>
+    <circle cx="68" cy="270" r="15" fill="#F3EDF7" stroke="#55405C" stroke-width="2"/>
+    <circle cx="68" cy="270" r="5.5" fill="#55405C"/>
+
+    <text x="100" y="265" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#29242C">IIIT Vadodara</text>
+    <text x="215" y="265" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C">· Research Intern (Graph ML &amp; RecSys)</text>
+
+    <text x="100" y="283" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#6F6670">Constructed GraphSAGE graph neural network recommendation pipelines in Neo4j.</text>
+    <text x="100" y="299" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394">Achieved +155% Recall@100 improvement over baseline models · Authored 2 Springer papers.</text>
+  </g>
+
+  <line x1="100" y1="317" x2="860" y2="317" stroke="#F5F0F6" stroke-width="1"/>
+
+  <!-- NODE 4: Svaarogyam (y = 360) -->
+  <g>
+    <circle cx="68" cy="360" r="15" fill="#F3EDF7" stroke="#55405C" stroke-width="2"/>
+    <circle cx="68" cy="360" r="5.5" fill="#55405C"/>
+
+    <text x="100" y="355" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#29242C">Svaarogyam Medical Devices</text>
+    <text x="325" y="355" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C">· R&amp;D / Embedded ML Intern</text>
+
+    <text x="100" y="373" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#6F6670">Developed optical non-invasive diabetes screening algorithms for resource-constrained edge hardware.</text>
+    <text x="100" y="389" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394">Deployed embedded SVM classifiers on microcontrollers achieving 83% screening accuracy.</text>
+  </g>
+
+  <line x1="100" y1="407" x2="860" y2="407" stroke="#F5F0F6" stroke-width="1"/>
+
+  <!-- NODE 5: MNIT Jaipur (y = 450) -->
+  <g>
+    <circle cx="68" cy="450" r="15" fill="#F3EDF7" stroke="#55405C" stroke-width="2"/>
+    <circle cx="68" cy="450" r="5.5" fill="#55405C"/>
+
+    <text x="100" y="445" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#29242C">MNIT Jaipur</text>
+    <text x="200" y="445" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C">· ML Intern (Clinical Machine Learning)</text>
+
+    <text x="100" y="463" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#6F6670">Engineered multi-disease medical risk prediction models using patient clinical data.</text>
+    <text x="100" y="479" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394">Benchmarked Random Forest, SVM, and XGBoost architectures for medical diagnostics.</text>
+  </g>
 </svg>

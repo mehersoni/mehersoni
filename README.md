@@ -22,16 +22,19 @@
 <br/>
 <br/>
 
+<!-- Education -->
 <img src="./assets/card_education.svg" alt="Education" width="100%"/>
 
 <br/>
 <br/>
 
-<img src="./assets/card_experience.svg" alt="Experience" width="100%"/>
+<!-- Experience (Vertical Timeline) -->
+<img src="./assets/card_experience.svg" alt="Research & Industry Experience" width="100%"/>
 
 <br/>
 <br/>
 
+<!-- 2x2 Project Bento Grid (Clickable Repo Links) -->
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" valign="top">
@@ -65,29 +68,29 @@
 <br/>
 <br/>
 
+<!-- Publications & Research -->
 <img src="./assets/card_publications.svg" alt="Publications & Research" width="100%"/>
 
 <br/>
 <br/>
 
+<!-- Technical Toolkit -->
 <img src="./assets/card_toolkit.svg" alt="Technical Toolkit" width="100%"/>
 
 <br/>
 <br/>
 
+<!-- Beyond the Lab -->
 <img src="./assets/card_beyond.svg" alt="Beyond the Lab" width="100%"/>
 
 <br/>
 <br/>
 
+<!-- GitHub Stats (Non-clickable plain images) -->
 <p align="center">
-  <a href="https://github.com/mehersoni">
-    <img src="https://github-readme-stats.vercel.app/api?username=mehersoni&show_icons=true&hide_title=false&bg_color=FFFFFF&title_color=55405C&text_color=29242C&icon_color=927394&border_color=EBE0EE&ring_color=BFA9C8&include_all_commits=true&count_private=true" height="155" alt="GitHub Stats"/>
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=mehersoni&show_icons=true&hide_title=false&bg_color=FFFFFF&title_color=55405C&text_color=29242C&icon_color=927394&border_color=EBE0EE&ring_color=BFA9C8&include_all_commits=true&count_private=true" height="155" alt="GitHub Stats"/>
   &nbsp;&nbsp;
-  <a href="https://github.com/mehersoni">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehersoni&layout=compact&bg_color=FFFFFF&title_color=55405C&text_color=29242C&border_color=EBE0EE" height="155" alt="Top Languages"/>
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehersoni&layout=compact&bg_color=FFFFFF&title_color=55405C&text_color=29242C&border_color=EBE0EE" height="155" alt="Top Languages"/>
 </p>
 
 <br/>
