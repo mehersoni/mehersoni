@@ -1,4 +1,4 @@
-<img src="./assets/header.svg" alt="Meher Soni — AI · Data Science · Research" width="100%"/>
+<img src="./assets/header_banner.svg" alt="Meher Soni — AI · Data Science · Research" width="100%"/>
 
 <br/>
 

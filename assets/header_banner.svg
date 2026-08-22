@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
+  <defs>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16111E"/>
+      <stop offset="50%" stop-color="#241731"/>
+      <stop offset="100%" stop-color="#3A2548"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E9DDEB"/>
+      <stop offset="100%" stop-color="#7A5E84"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BFA9C8"/>
+      <stop offset="100%" stop-color="#4A3254"/>
+    </linearGradient>
+    <radialGradient id="nglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E9DDEB" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#BFA9C8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="250" fill="url(#hbg)" rx="16"/>
+  <rect width="900" height="250" fill="none" stroke="#4E3560" stroke-width="1.5" rx="16"/>
+
+  <!-- Left accent strip -->
+  <rect x="0" y="0" width="5" height="250" fill="#927394" rx="2.5"/>
+
+  <!-- Background subtle geometry circles -->
+  <circle cx="780" cy="60" r="140" fill="#BFA9C8" opacity="0.035"/>
+  <circle cx="160" cy="220" r="90" fill="#927394" opacity="0.03"/>
+
+  <!-- ─── SPEECH WAVEFORM SPECTROGRAM BARS (Right side background) ─── -->
+  <g opacity="0.8">
+    <rect x="540" y="165" width="6" height="40" rx="3" fill="url(#bar1)"/>
+    <rect x="550" y="145" width="6" height="60" rx="3" fill="url(#bar2)"/>
+    <rect x="560" y="175" width="6" height="30" rx="3" fill="url(#bar1)"/>
+    <rect x="570" y="130" width="6" height="75" rx="3" fill="url(#bar1)"/>
+    <rect x="580" y="160" width="6" height="45" rx="3" fill="url(#bar2)"/>
+    <rect x="590" y="180" width="6" height="25" rx="3" fill="url(#bar1)"/>
+    <rect x="600" y="140" width="6" height="65" rx="3" fill="url(#bar1)"/>
+    <rect x="610" y="120" width="6" height="85" rx="3" fill="url(#bar2)"/>
+    <rect x="620" y="155" width="6" height="50" rx="3" fill="url(#bar1)"/>
+    <rect x="630" y="170" width="6" height="35" rx="3" fill="url(#bar2)"/>
+    <rect x="640" y="135" width="6" height="70" rx="3" fill="url(#bar1)"/>
+    <rect x="650" y="150" width="6" height="55" rx="3" fill="url(#bar1)"/>
+    <rect x="660" y="175" width="6" height="30" rx="3" fill="url(#bar2)"/>
+    <rect x="670" y="145" width="6" height="60" rx="3" fill="url(#bar1)"/>
+    <rect x="680" y="160" width="6" height="45" rx="3" fill="url(#bar2)"/>
+  </g>
+
+  <!-- ─── KNOWLEDGE GRAPH NETWORK (Top Right) ─── -->
+  <g>
+    <!-- Graph Edges -->
+    <line x1="720" y1="45" x2="780" y2="70" stroke="#927394" stroke-width="1" opacity="0.45"/>
+    <line x1="780" y1="70" x2="750" y2="125" stroke="#927394" stroke-width="1" opacity="0.4"/>
+    <line x1="750" y1="125" x2="690" y2="95" stroke="#927394" stroke-width="0.8" opacity="0.35"/>
+    <line x1="690" y1="95" x2="720" y2="45" stroke="#927394" stroke-width="0.8" opacity="0.35"/>
+    <line x1="780" y1="70" x2="830" y2="45" stroke="#BFA9C8" stroke-width="1" opacity="0.4"/>
+    <line x1="830" y1="45" x2="850" y2="100" stroke="#BFA9C8" stroke-width="0.8" opacity="0.35"/>
+    <line x1="850" y1="100" x2="780" y2="70" stroke="#BFA9C8" stroke-width="0.8" opacity="0.3"/>
+    <line x1="750" y1="125" x2="800" y2="155" stroke="#927394" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- Glowing Halos -->
+    <circle cx="780" cy="70" r="20" fill="url(#nglow)"/>
+    <circle cx="720" cy="45" r="14" fill="url(#nglow)"/>
+    <circle cx="830" cy="45" r="12" fill="url(#nglow)"/>
+
+    <!-- Nodes -->
+    <circle cx="720" cy="45" r="4" fill="#E9DDEB" opacity="0.95"/>
+    <circle cx="780" cy="70" r="6.5" fill="#C8B8D9" opacity="1"/>
+    <circle cx="750" cy="125" r="5" fill="#BFA9C8" opacity="0.85"/>
+    <circle cx="690" cy="95" r="3.5" fill="#E9DDEB" opacity="0.75"/>
+    <circle cx="830" cy="45" r="4.5" fill="#C8B8D9" opacity="0.85"/>
+    <circle cx="850" cy="100" r="3.5" fill="#BFA9C8" opacity="0.7"/>
+    <circle cx="800" cy="155" r="3" fill="#927394" opacity="0.6"/>
+  </g>
+
+  <!-- ─── TYPOGRAPHY & TEXT ─── -->
+  <!-- Eyebrow -->
+  <text x="36" y="58"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="10" font-weight="700" letter-spacing="3.5" fill="#BFA9C8" opacity="0.85">AI · DATA SCIENCE · RESEARCH</text>
+
+  <!-- Name Hero -->
+  <text x="34" y="122"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="48" font-weight="700" letter-spacing="4" fill="#F8F4F6">MEHER SONI</text>
+
+  <!-- Subtitle Line -->
+  <line x1="36" y1="138" x2="480" y2="138" stroke="#55405C" stroke-width="1" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="36" y="162"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="14" font-weight="300" letter-spacing="2" fill="#C8B8D9">Artificial Intelligence · Data Science · Research</text>
+
+  <!-- Research Tags -->
+  <text x="36" y="186"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="11" font-weight="400" letter-spacing="1" fill="#927394">Speech AI · Indic NLP · Knowledge Graphs · Trustworthy AI</text>
+
+  <!-- Affiliations Footer -->
+  <text x="36" y="218"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="10.5" fill="#BFA9C8" opacity="0.65" font-style="italic">BIT Mesra × IIT Madras · Published in Springer · 5 Research Internships</text>
+
+  <!-- Star Accent -->
+  <text x="500" y="228" font-family="serif" font-size="9" fill="#BFA9C8" opacity="0.4">✦</text>
+</svg>
