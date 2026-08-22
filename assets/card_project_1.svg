@@ -13,51 +13,23 @@
       <stop offset="100%" stop-color="#FDFAFF"/>
     </linearGradient>
   </defs>
-
   <rect width="440" height="212" fill="url(#bg)" rx="14"/>
   <rect width="440" height="212" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="14"/>
-
-  <!-- Left accent bar -->
   <rect x="0" y="0" width="5" height="212" fill="url(#accent)" rx="3"/>
-
-  <!-- Ghost number -->
-  <text x="320" y="108" font-family="Georgia, serif" font-size="100" font-weight="700" fill="#55405C" opacity="0.045" text-anchor="end">01</text>
-
-  <!-- Number badge -->
+  <text x="350" y="108" font-family="Georgia, serif" font-size="90" font-weight="700" fill="#55405C" opacity="0.045" text-anchor="end">01</text>
   <rect x="20" y="18" width="42" height="24" rx="7" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
   <text x="41" y="34" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">01</text>
-
-  <!-- Arrow -->
   <text x="408" y="36" font-family="sans-serif" font-size="20" fill="#DDD0E5">↗</text>
-
-  <!-- Title -->
   <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#29242C">NYAYA.AI</text>
-
-  <!-- Rule -->
   <line x1="20" y1="87" x2="420" y2="87" stroke="#F0E8F2" stroke-width="1"/>
-
-  <!-- Description -->
-  <text x="20" y="107" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#6F6670">Graph-constrained legal reasoning</text>
-
-  <!-- Tech pills -->
+  <text x="20" y="108" font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#6F6670">Legal RAG that actually cites real cases.</text>
   <rect x="20"  y="126" width="84"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
   <text x="62"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">GraphRAG</text>
-
   <rect x="112" y="126" width="62"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
   <text x="143" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Neo4j</text>
-
   <rect x="182" y="126" width="120" height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
   <text x="242" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">LLM Grounding</text>
-
-  <!-- Metric footer -->
   <rect x="0" y="184" width="440" height="28" fill="url(#footer)" rx="0"/>
   <rect x="0" y="184" width="440" height="1.5" fill="#EBE0EE"/>
-  <rect x="0" y="184" width="440" height="28" fill="none" stroke="none"/>
-  <!-- Round bottom corners -->
-  <rect x="0"   y="184" width="14"  height="28" fill="url(#footer)"/>
-  <rect x="426" y="184" width="14"  height="28" fill="url(#footer)"/>
-
-  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">
-    82% reduction in false citations · Springer IDBA 2026 · First Author
-  </text>
+  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">82% reduction in false citations — Springer IDBA 2026</text>
 </svg>
