@@ -86,16 +86,6 @@
 <br/>
 <br/>
 
-<!-- GitHub Stats (Non-clickable plain images) -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mehersoni&show_icons=true&hide_title=false&bg_color=FFFFFF&title_color=55405C&text_color=29242C&icon_color=927394&border_color=EBE0EE&ring_color=BFA9C8&include_all_commits=true&count_private=true" height="155" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehersoni&layout=compact&bg_color=FFFFFF&title_color=55405C&text_color=29242C&border_color=EBE0EE" height="155" alt="Top Languages"/>
-</p>
-
-<br/>
-<br/>
-
 <p align="center">
   <sub>✦ &nbsp; <em>Let's connect and build meaningful things together.</em> &nbsp; ✦</sub>
 </p>
