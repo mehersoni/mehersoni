@@ -46,9 +46,6 @@
   <circle cx="200" cy="260" r="100" fill="#927394" opacity="0.04"/>
 
   <!-- ─── WAVEFORM BARS (bottom-anchored at y=248, SMIL animated) ─── -->
-  <!-- Spacing: bars at x = 618, 630, 642... width=7, gap=5 -->
-  <!-- Each bar animates between a min and max height with unique timing -->
-
   <g opacity="0.85">
     <rect x="618" width="7" rx="3.5" fill="url(#barGrad)">
       <animate attributeName="height" values="14;36;10;42;14" dur="2.1s" repeatCount="indefinite" begin="0s"/>
@@ -175,13 +172,13 @@
   <text x="29" y="218"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
     font-size="11.5" font-weight="400" letter-spacing="1"
-    fill="#927394">Speech AI &nbsp;·&nbsp; Indic NLP &nbsp;·&nbsp; Knowledge Graphs &nbsp;·&nbsp; Trustworthy AI</text>
+    fill="#927394">Speech AI &#160;·&#160; Indic NLP &#160;·&#160; Knowledge Graphs &#160;·&#160; Trustworthy AI</text>
 
   <!-- Affiliations row -->
   <text x="29" y="256"
     font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
     font-size="11" fill="#BFA9C8" opacity="0.6" font-style="italic">
-    BIT Mesra × IIT Madras &nbsp;·&nbsp; Published in Springer &nbsp;·&nbsp; 5 Research Internships
+    BIT Mesra × IIT Madras &#160;·&#160; Published in Springer &#160;·&#160; 5 Research Internships
   </text>
 
   <!-- Corner star -->
