@@ -1,109 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="100%" height="540">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FBF7FC"/>
+      <stop offset="0%" stop-color="#1E1628"/>
+      <stop offset="100%" stop-color="#16111E"/>
     </linearGradient>
     <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%"   stop-color="#55405C"/>
-      <stop offset="50%"  stop-color="#927394"/>
-      <stop offset="100%" stop-color="#C8B4D4"/>
+      <stop offset="0%"   stop-color="#7A5E8A"/>
+      <stop offset="50%"  stop-color="#A07EB5"/>
+      <stop offset="100%" stop-color="#C8B0DC"/>
     </linearGradient>
     <linearGradient id="topRule" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%"   stop-color="#55405C" stop-opacity="0"/>
-      <stop offset="25%"  stop-color="#55405C"/>
-      <stop offset="75%"  stop-color="#927394"/>
-      <stop offset="100%" stop-color="#927394" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#7A5E8A" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#7A5E8A"/>
+      <stop offset="75%"  stop-color="#A07EB5"/>
+      <stop offset="100%" stop-color="#A07EB5" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <rect width="900" height="540" fill="url(#bg)" rx="16"/>
-  <rect width="900" height="540" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
-  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.6"/>
+  <rect width="900" height="540" fill="none" stroke="#3D3050" stroke-width="1.5" rx="16"/>
+  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.7"/>
 
-  <text x="40" y="36"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="10" font-weight="700" letter-spacing="3" fill="#BFA9C8">RESEARCH &amp; INDUSTRY EXPERIENCE</text>
-  <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
+  <text x="40" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#9D85B8">RESEARCH &amp; INDUSTRY EXPERIENCE</text>
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#2C2040" stroke-width="1"/>
 
-  <!-- Vertical Timeline Spine -->
+  <!-- Spine -->
   <line x1="68" y1="76" x2="68" y2="486" stroke="url(#spine)" stroke-width="2"/>
 
-  <!-- ══ NODE 1: IIT Ropar (y=88) ══ -->
-  <circle cx="68" cy="88" r="14" fill="#F3EDF7" stroke="#55405C" stroke-width="1.8"/>
-  <circle cx="68" cy="88" r="5" fill="#55405C"/>
+  <!-- NODE 1: IIT Ropar -->
+  <circle cx="68" cy="88" r="14" fill="#2C2044" stroke="#7A5E8A" stroke-width="1.8"/>
+  <circle cx="68" cy="88" r="5" fill="#A07EB5"/>
 
-  <text x="100" y="82" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#29242C">IIT Ropar</text>
-  <text x="195" y="82" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#927394">Speech &amp; Language AI</text>
+  <text x="100" y="82" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#EDE0F8">IIT Ropar</text>
+  <text x="195" y="82" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#9D85B8">Speech &amp; Language AI</text>
+  <text x="100" y="100" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">Built G2P and TTS front-end pipelines for Indic languages — phoneme inventories, text</text>
+  <text x="100" y="116" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">normalization and CLS mapping across Urdu, Punjabi and Indian English.</text>
 
-  <text x="100" y="100" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    Built G2P and TTS front-end pipelines for Indic languages — phoneme inventories, text
-  </text>
-  <text x="100" y="116" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    normalization and CLS mapping across Urdu, Punjabi and Indian English.
-  </text>
+  <line x1="96" y1="132" x2="860" y2="132" stroke="#2C2040" stroke-width="1"/>
 
-  <line x1="96" y1="132" x2="860" y2="132" stroke="#F5F0F6" stroke-width="1"/>
+  <!-- NODE 2: DRDO / DEAL -->
+  <circle cx="68" cy="176" r="14" fill="#2C2044" stroke="#7A5E8A" stroke-width="1.8"/>
+  <circle cx="68" cy="176" r="5" fill="#A07EB5"/>
 
-  <!-- ══ NODE 2: DRDO / DEAL (y=180) ══ -->
-  <circle cx="68" cy="176" r="14" fill="#F3EDF7" stroke="#55405C" stroke-width="1.8"/>
-  <circle cx="68" cy="176" r="5" fill="#55405C"/>
+  <text x="100" y="170" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#EDE0F8">DRDO / DEAL</text>
+  <text x="217" y="170" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#9D85B8">Defense Speech Recognition</text>
+  <text x="100" y="188" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">Trained CNN-LSTM acoustic models for speech recognition in noisy tactical environments —</text>
+  <text x="100" y="204" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">wind, radio static and low-SNR field audio. Built for real deployment constraints.</text>
 
-  <text x="100" y="170" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#29242C">DRDO / DEAL</text>
-  <text x="217" y="170" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#927394">Defense Speech Recognition</text>
+  <line x1="96" y1="220" x2="860" y2="220" stroke="#2C2040" stroke-width="1"/>
 
-  <text x="100" y="188" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    Trained CNN-LSTM acoustic models for speech recognition in noisy tactical environments —
-  </text>
-  <text x="100" y="204" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    wind, radio static and low-SNR field audio. Built for real deployment constraints.
-  </text>
+  <!-- NODE 3: IIIT Vadodara -->
+  <circle cx="68" cy="264" r="14" fill="#2C2044" stroke="#7A5E8A" stroke-width="1.8"/>
+  <circle cx="68" cy="264" r="5" fill="#A07EB5"/>
 
-  <line x1="96" y1="220" x2="860" y2="220" stroke="#F5F0F6" stroke-width="1"/>
+  <text x="100" y="258" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#EDE0F8">IIIT Vadodara</text>
+  <text x="220" y="258" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#9D85B8">Graph ML &amp; Recommendation</text>
+  <text x="100" y="276" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">Redesigned a recommender system using GraphSAGE on Neo4j — graph-native architecture,</text>
+  <text x="100" y="292" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">not just embeddings. Gained +155% Recall@100. Published at HACER 2025.</text>
 
-  <!-- ══ NODE 3: IIIT Vadodara (y=268) ══ -->
-  <circle cx="68" cy="264" r="14" fill="#F3EDF7" stroke="#55405C" stroke-width="1.8"/>
-  <circle cx="68" cy="264" r="5" fill="#55405C"/>
+  <line x1="96" y1="314" x2="860" y2="314" stroke="#2C2040" stroke-width="1"/>
 
-  <text x="100" y="258" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#29242C">IIIT Vadodara</text>
-  <text x="220" y="258" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#927394">Graph ML &amp; Recommendation</text>
+  <!-- NODE 4: Svaarogyam -->
+  <circle cx="68" cy="368" r="14" fill="#2C2044" stroke="#7A5E8A" stroke-width="1.8"/>
+  <circle cx="68" cy="368" r="5" fill="#A07EB5"/>
 
-  <text x="100" y="276" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    Redesigned a recommender system using GraphSAGE on Neo4j — graph-native architecture,
-  </text>
-  <text x="100" y="292" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    not just embeddings. Gained +155% Recall@100. Published at HACER 2025.
-  </text>
+  <text x="100" y="362" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#EDE0F8">Svaarogyam Medical Devices</text>
+  <text x="318" y="362" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#9D85B8">R&amp;D / Embedded ML</text>
+  <text x="100" y="380" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">Built a non-invasive diabetes screening system for edge hardware — optical sensor signal</text>
+  <text x="100" y="396" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">processing with a custom SVM hitting 83% accuracy on Arduino-class microcontrollers.</text>
 
-  <line x1="96" y1="314" x2="860" y2="314" stroke="#F5F0F6" stroke-width="1"/>
+  <line x1="96" y1="412" x2="860" y2="412" stroke="#2C2040" stroke-width="1"/>
 
-  <!-- ══ NODE 4: Svaarogyam (y=372) ══ -->
-  <circle cx="68" cy="368" r="14" fill="#F3EDF7" stroke="#55405C" stroke-width="1.8"/>
-  <circle cx="68" cy="368" r="5" fill="#55405C"/>
+  <!-- NODE 5: MNIT Jaipur -->
+  <circle cx="68" cy="450" r="14" fill="#2C2044" stroke="#7A5E8A" stroke-width="1.8"/>
+  <circle cx="68" cy="450" r="5" fill="#A07EB5"/>
 
-  <text x="100" y="362" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#29242C">Svaarogyam Medical Devices</text>
-  <text x="318" y="362" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#927394">R&amp;D / Embedded ML</text>
-
-  <text x="100" y="380" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    Built a non-invasive diabetes screening system for edge hardware — optical sensor signal
-  </text>
-  <text x="100" y="396" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    processing with a custom SVM hitting 83% accuracy on Arduino-class microcontrollers.
-  </text>
-
-  <line x1="96" y1="412" x2="860" y2="412" stroke="#F5F0F6" stroke-width="1"/>
-
-  <!-- ══ NODE 5: MNIT Jaipur (y=454) ══ -->
-  <circle cx="68" cy="450" r="14" fill="#F3EDF7" stroke="#55405C" stroke-width="1.8"/>
-  <circle cx="68" cy="450" r="5" fill="#55405C"/>
-
-  <text x="100" y="444" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#29242C">MNIT Jaipur</text>
-  <text x="198" y="444" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#927394">Clinical Machine Learning</text>
-
-  <text x="100" y="462" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    Compared RF, SVM and XGBoost for multi-disease clinical prediction — diabetes, cardiac
-  </text>
-  <text x="100" y="478" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#29242C">
-    risk and more. Mapped which model held up best under imbalanced medical data.
-  </text>
+  <text x="100" y="444" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#EDE0F8">MNIT Jaipur</text>
+  <text x="198" y="444" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#9D85B8">Clinical Machine Learning</text>
+  <text x="100" y="462" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">Compared RF, SVM and XGBoost for multi-disease clinical prediction — diabetes, cardiac</text>
+  <text x="100" y="478" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#C4B4D8">risk and more. Mapped which model held up best under imbalanced medical data.</text>
 </svg>

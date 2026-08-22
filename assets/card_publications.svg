@@ -1,75 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="300">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FBF7FC"/>
+      <stop offset="0%" stop-color="#1E1628"/>
+      <stop offset="100%" stop-color="#16111E"/>
     </linearGradient>
     <linearGradient id="topRule" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%"   stop-color="#55405C" stop-opacity="0"/>
-      <stop offset="25%"  stop-color="#55405C"/>
-      <stop offset="75%"  stop-color="#927394"/>
-      <stop offset="100%" stop-color="#927394" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#7A5E8A" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#7A5E8A"/>
+      <stop offset="75%"  stop-color="#A07EB5"/>
+      <stop offset="100%" stop-color="#A07EB5" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <rect width="900" height="300" fill="url(#bg)" rx="16"/>
-  <rect width="900" height="300" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
-  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.55"/>
+  <rect width="900" height="300" fill="none" stroke="#3D3050" stroke-width="1.5" rx="16"/>
+  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.7"/>
 
-  <text x="40" y="36"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="10" font-weight="700" letter-spacing="3" fill="#BFA9C8">PUBLICATIONS</text>
-  <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
+  <text x="40" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#9D85B8">PUBLICATIONS</text>
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#2C2040" stroke-width="1"/>
 
-  <!-- ─── PUB 1 ─── -->
-  <rect x="40" y="58" width="4" height="58" fill="#55405C" rx="2"/>
+  <!-- PUB 1 -->
+  <rect x="40" y="58" width="4" height="58" fill="#7A5E8A" rx="2"/>
 
-  <rect x="54" y="58" width="106" height="22" rx="11" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="107" y="73" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C" text-anchor="middle">Springer IDBA 2026</text>
+  <rect x="54" y="58" width="106" height="22" rx="11" fill="#2C2044" stroke="#5C4478" stroke-width="1"/>
+  <text x="107" y="73" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#D4BEED" text-anchor="middle">Springer IDBA 2026</text>
 
-  <rect x="168" y="58" width="84" height="22" rx="11" fill="#EDE3F2" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="210" y="73" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C" text-anchor="middle">First Author</text>
+  <rect x="168" y="58" width="84" height="22" rx="11" fill="#3A2858" stroke="#5C4478" stroke-width="1"/>
+  <text x="210" y="73" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#D4BEED" text-anchor="middle">First Author</text>
 
-  <text x="54" y="97"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="14" font-weight="700" fill="#29242C">Reducing Hallucinated Legal Citations in LLM Responses for Indian Law</text>
+  <text x="54" y="97" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#EDE0F8">Reducing Hallucinated Legal Citations in LLM Responses for Indian Law</text>
+  <text x="54" y="116" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#8E7898">LLMs confidently cite cases that don't exist. Ours don't — CHR fell from 0.343 to 0.063, false citations down 82%.</text>
 
-  <text x="54" y="116"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="11.5" fill="#6F6670">LLMs confidently cite cases that don't exist. Ours don't — CHR fell from 0.343 to 0.063, false citations down 82%.</text>
+  <line x1="40" y1="132" x2="860" y2="132" stroke="#2C2040" stroke-width="1"/>
 
-  <line x1="40" y1="132" x2="860" y2="132" stroke="#F3EDF7" stroke-width="1"/>
+  <!-- PUB 2 -->
+  <rect x="40" y="142" width="4" height="58" fill="#A07EB5" rx="2"/>
 
-  <!-- ─── PUB 2 ─── -->
-  <rect x="40" y="142" width="4" height="58" fill="#927394" rx="2"/>
+  <rect x="54" y="142" width="114" height="22" rx="11" fill="#2C2044" stroke="#5C4478" stroke-width="1"/>
+  <text x="111" y="157" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#D4BEED" text-anchor="middle">HACER 2025 · IIIT Vadodara</text>
 
-  <rect x="54" y="142" width="114" height="22" rx="11" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="111" y="157" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C" text-anchor="middle">HACER 2025 · IIIT Vadodara</text>
+  <rect x="176" y="142" width="84" height="22" rx="11" fill="#3A2858" stroke="#5C4478" stroke-width="1"/>
+  <text x="218" y="157" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#D4BEED" text-anchor="middle">First Author</text>
 
-  <rect x="176" y="142" width="84" height="22" rx="11" fill="#EDE3F2" stroke="#BFA9C8" stroke-width="1"/>
-  <text x="218" y="157" font-family="'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55405C" text-anchor="middle">First Author</text>
+  <text x="54" y="181" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#EDE0F8">Knowledge Graph Construction from Review-Based Conversational Data</text>
+  <text x="54" y="200" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#8E7898">Turns messy review conversations into traversable Neo4j graphs — entity extraction, relations and inverse multi-hop querying.</text>
 
-  <text x="54" y="181"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="14" font-weight="700" fill="#29242C">Knowledge Graph Construction from Review-Based Conversational Data</text>
+  <line x1="40" y1="216" x2="860" y2="216" stroke="#2C2040" stroke-width="1"/>
 
-  <text x="54" y="200"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="11.5" fill="#6F6670">Turns messy review conversations into traversable Neo4j graphs — entity extraction, relations and inverse multi-hop querying.</text>
+  <!-- PUB 3 -->
+  <rect x="40" y="226" width="4" height="50" fill="#3D3050" rx="2"/>
 
-  <line x1="40" y1="216" x2="860" y2="216" stroke="#F3EDF7" stroke-width="1"/>
+  <rect x="54" y="226" width="130" height="20" rx="10" fill="#231840" stroke="#3D3050" stroke-width="1"/>
+  <text x="119" y="240" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" font-weight="600" fill="#8E7898" text-anchor="middle">Springer IDBA 2026 · Co-Author</text>
 
-  <!-- ─── PUB 3 (co-author) ─── -->
-  <rect x="40" y="226" width="4" height="50" fill="#E9DDEB" rx="2"/>
-
-  <rect x="54" y="226" width="130" height="20" rx="10" fill="#F8F4F6" stroke="#EBE0EE" stroke-width="1"/>
-  <text x="119" y="240" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" font-weight="600" fill="#927394" text-anchor="middle">Springer IDBA 2026 · Co-Author</text>
-
-  <text x="54" y="262"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="13.5" font-weight="500" fill="#55405C">Explainable Drug Adoption Forecasting using Knowledge Graphs</text>
-
-  <text x="54" y="278"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="11" fill="#BFA9C8">Graph-based interpretable forecasting for pharmaceutical consumption patterns.</text>
+  <text x="54" y="262" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" font-weight="500" fill="#9D85B8">Explainable Drug Adoption Forecasting using Knowledge Graphs</text>
+  <text x="54" y="278" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#5C4478">Graph-based interpretable forecasting for pharmaceutical consumption patterns.</text>
 </svg>

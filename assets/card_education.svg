@@ -1,105 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="230">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FBF7FC"/>
+      <stop offset="0%" stop-color="#1E1628"/>
+      <stop offset="100%" stop-color="#16111E"/>
     </linearGradient>
     <linearGradient id="accentL" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#55405C"/>
-      <stop offset="100%" stop-color="#927394"/>
+      <stop offset="0%" stop-color="#7A5E8A"/>
+      <stop offset="100%" stop-color="#A07EB5"/>
     </linearGradient>
     <linearGradient id="accentR" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#BFA9C8"/>
-      <stop offset="100%" stop-color="#E9DDEB"/>
+      <stop offset="100%" stop-color="#D4C2E2"/>
     </linearGradient>
-    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#55405C" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#55405C" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#55405C" stop-opacity="0"/>
+    <linearGradient id="topRule" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#7A5E8A" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#7A5E8A"/>
+      <stop offset="75%"  stop-color="#A07EB5"/>
+      <stop offset="100%" stop-color="#A07EB5" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <rect width="900" height="230" fill="url(#bg)" rx="16"/>
-  <rect width="900" height="230" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="16"/>
+  <rect width="900" height="230" fill="none" stroke="#3D3050" stroke-width="1.5" rx="16"/>
+  <rect x="0" y="0" width="900" height="4" fill="url(#topRule)" rx="2" opacity="0.7"/>
 
-  <!-- Top gradient rule -->
-  <rect x="0" y="0" width="900" height="4" fill="url(#divider)" rx="2"/>
+  <text x="40" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#9D85B8">EDUCATION</text>
+  <line x1="40" y1="46" x2="860" y2="46" stroke="#2C2040" stroke-width="1"/>
 
-  <!-- ─── SECTION LABEL ─── -->
-  <text x="40" y="36"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="10" font-weight="700" letter-spacing="3"
-    fill="#BFA9C8">EDUCATION</text>
-
-  <!-- Divider line -->
-  <line x1="40" y1="46" x2="860" y2="46" stroke="#EBE0EE" stroke-width="1"/>
-
-  <!-- ═══════════ LEFT: BIT MESRA ═══════════ -->
+  <!-- LEFT: BIT MESRA -->
   <rect x="40" y="60" width="4" height="136" fill="url(#accentL)" rx="2"/>
 
-  <!-- Institution name -->
-  <text x="58" y="87"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="16" font-weight="700" fill="#29242C">Birla Institute of Technology, Mesra</text>
+  <text x="58" y="87" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#EDE0F8">Birla Institute of Technology, Mesra</text>
+  <text x="58" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#A07EB5" font-weight="500">B.Tech in Artificial Intelligence</text>
+  <text x="58" y="130" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#8E7898">2023 – 2027</text>
 
-  <!-- Degree -->
-  <text x="58" y="110"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="13" fill="#55405C" font-weight="500">B.Tech in Artificial Intelligence</text>
+  <rect x="58" y="144" width="138" height="30" rx="8" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="127" y="163" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#D4BEED" text-anchor="middle">✦ SGPA 9.62 / 10</text>
 
-  <!-- Year -->
-  <text x="58" y="130"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="12" fill="#6F6670">2023 – 2027</text>
+  <!-- Separator -->
+  <line x1="450" y1="60" x2="450" y2="196" stroke="#2C2040" stroke-width="1"/>
 
-  <!-- SGPA badge -->
-  <rect x="58" y="144" width="138" height="30" rx="8" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
-  <text x="127" y="163"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="12" font-weight="700" fill="#55405C" text-anchor="middle">✦ SGPA 9.62 / 10</text>
-
-  <!-- Vertical separator -->
-  <line x1="450" y1="60" x2="450" y2="196" stroke="#EBE0EE" stroke-width="1"/>
-
-  <!-- ═══════════ RIGHT: IIT MADRAS ═══════════ -->
+  <!-- RIGHT: IIT MADRAS -->
   <rect x="470" y="60" width="4" height="136" fill="url(#accentR)" rx="2"/>
 
-  <text x="488" y="87"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="16" font-weight="700" fill="#29242C">Indian Institute of Technology Madras</text>
+  <text x="488" y="87" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#EDE0F8">Indian Institute of Technology Madras</text>
+  <text x="488" y="110" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#BFA9C8" font-weight="500">B.S. in Data Science</text>
+  <text x="488" y="130" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#8E7898">2024 – 2028</text>
 
-  <text x="488" y="110"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="13" fill="#927394" font-weight="500">B.S. in Data Science</text>
+  <rect x="488" y="144" width="144" height="30" rx="8" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="560" y="163" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#D4BEED" text-anchor="middle">✦ Dual-Degree Program</text>
 
-  <text x="488" y="130"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="12" fill="#6F6670">2024 – 2028</text>
-
-  <rect x="488" y="144" width="144" height="30" rx="8" fill="#F3EDF7" stroke="#BFA9C8" stroke-width="1.2"/>
-  <text x="560" y="163"
-    font-family="'Segoe UI', system-ui, sans-serif"
-    font-size="12" font-weight="700" fill="#55405C" text-anchor="middle">✦ Dual-Degree Program</text>
-
-  <!-- ═══════════ BOTTOM: KEY NUMBERS ═══════════ -->
-  <line x1="40" y1="204" x2="860" y2="204" stroke="#EBE0EE" stroke-width="1"/>
+  <!-- BOTTOM STATS -->
+  <line x1="40" y1="204" x2="860" y2="204" stroke="#2C2040" stroke-width="1"/>
 
   <g transform="translate(40, 210)">
-    <!-- Number 1 -->
-    <text x="0"   y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#55405C">3</text>
-    <text x="17"  y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6F6670" font-weight="400">Springer &amp; conference papers</text>
+    <text x="0"  y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#A07EB5">3</text>
+    <text x="17" y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8E7898">Springer &amp; conference papers</text>
 
-    <!-- Separator dot -->
-    <circle cx="260" cy="10" r="2" fill="#E9DDEB"/>
+    <circle cx="260" cy="10" r="2" fill="#3D3050"/>
 
-    <!-- Number 2 -->
-    <text x="277"  y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#927394">5</text>
-    <text x="294"  y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6F6670">research &amp; industry internships</text>
+    <text x="277" y="15" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#BFA9C8">5</text>
+    <text x="294" y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8E7898">research &amp; industry internships</text>
 
-    <!-- Separator dot -->
-    <circle cx="560" cy="10" r="2" fill="#E9DDEB"/>
+    <circle cx="560" cy="10" r="2" fill="#3D3050"/>
 
-    <!-- Number 3 -->
-    <text x="577" y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#BFA9C8">GATE DA 2026 Qualified</text>
+    <text x="577" y="15" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#9D85B8">GATE DA 2026 Qualified</text>
   </g>
 </svg>

@@ -1,37 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 212" width="100%" height="212">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FBF7FC"/>
+      <stop offset="0%" stop-color="#1E1628"/>
+      <stop offset="100%" stop-color="#16111E"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#55405C"/>
-      <stop offset="100%" stop-color="#927394"/>
+      <stop offset="0%" stop-color="#7A5E8A"/>
+      <stop offset="100%" stop-color="#A07EB5"/>
     </linearGradient>
     <linearGradient id="footer" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#F3EDF7"/>
-      <stop offset="100%" stop-color="#FDFAFF"/>
+      <stop offset="0%" stop-color="#1C1430"/>
+      <stop offset="100%" stop-color="#231C38"/>
     </linearGradient>
   </defs>
   <rect width="440" height="212" fill="url(#bg)" rx="14"/>
-  <rect width="440" height="212" fill="none" stroke="#EBE0EE" stroke-width="1.5" rx="14"/>
+  <rect width="440" height="212" fill="none" stroke="#3D3050" stroke-width="1.5" rx="14"/>
   <rect x="0" y="0" width="5" height="212" fill="url(#accent)" rx="3"/>
-  <text x="350" y="108" font-family="Georgia, serif" font-size="90" font-weight="700" fill="#55405C" opacity="0.045" text-anchor="end">04</text>
-  <rect x="20" y="18" width="42" height="24" rx="7" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="41" y="34" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">04</text>
-  <text x="408" y="36" font-family="sans-serif" font-size="20" fill="#DDD0E5">↗</text>
-  <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#29242C">SUDARSHANA</text>
-  <line x1="20" y1="87" x2="420" y2="87" stroke="#F0E8F2" stroke-width="1"/>
-  <text x="20" y="108" font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#6F6670">Wearable safety system — physiological signals, edge inference.</text>
-  <rect x="20"  y="126" width="44"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="42"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">IoT</text>
-  <rect x="72"  y="126" width="80"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="112" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Edge ML</text>
-  <rect x="160" y="126" width="116" height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="218" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Sensor Fusion</text>
-  <rect x="284" y="126" width="78"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="323" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Arduino</text>
+  <text x="350" y="112" font-family="Georgia, serif" font-size="90" font-weight="700" fill="#A07EB5" opacity="0.06" text-anchor="end">04</text>
+  <rect x="20" y="18" width="42" height="24" rx="7" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="41" y="34" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#D4BEED" text-anchor="middle">04</text>
+  <text x="408" y="36" font-family="sans-serif" font-size="20" fill="#5C4478">↗</text>
+  <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#EDE0F8">SUDARSHANA</text>
+  <line x1="20" y1="87" x2="420" y2="87" stroke="#2C2040" stroke-width="1"/>
+  <text x="20" y="108" font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#8E7898">Wearable safety system — physiological signals, edge inference.</text>
+  <rect x="20"  y="126" width="44" height="27" rx="13.5" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="42"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#D4BEED" text-anchor="middle">IoT</text>
+  <rect x="72"  y="126" width="80" height="27" rx="13.5" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="112" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#D4BEED" text-anchor="middle">Edge ML</text>
+  <rect x="160" y="126" width="116" height="27" rx="13.5" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="218" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#D4BEED" text-anchor="middle">Sensor Fusion</text>
+  <rect x="284" y="126" width="78" height="27" rx="13.5" fill="#2C2044" stroke="#5C4478" stroke-width="1.2"/>
+  <text x="323" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#D4BEED" text-anchor="middle">Arduino</text>
   <rect x="0" y="184" width="440" height="28" fill="url(#footer)" rx="0"/>
-  <rect x="0" y="184" width="440" height="1.5" fill="#EBE0EE"/>
-  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">99.7% F1-Score — heart rate, GSR and accelerometer signals</text>
+  <rect x="0" y="184" width="440" height="1.5" fill="#3D3050"/>
+  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#9D85B8" font-weight="600">99.7% F1-Score — heart rate, GSR and accelerometer signals</text>
 </svg>
