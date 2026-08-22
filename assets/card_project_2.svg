@@ -20,18 +20,16 @@
   <rect x="20" y="18" width="42" height="24" rx="7" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
   <text x="41" y="34" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#55405C" text-anchor="middle">02</text>
   <text x="408" y="36" font-family="sans-serif" font-size="20" fill="#DDD0E5">↗</text>
-  <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#29242C">Speech-to-Text via Deep Learning</text>
+  <text x="20" y="76" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#29242C">PharmaDrishti</text>
   <line x1="20" y1="87" x2="420" y2="87" stroke="#F0E8F2" stroke-width="1"/>
-  <text x="20" y="107" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#6F6670">Noise-aware automatic speech recognition</text>
-  <rect x="20"  y="126" width="94"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="67"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Wav2Vec 2.0</text>
-  <rect x="122" y="126" width="98"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="171" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">CNN-BiLSTM</text>
-  <rect x="228" y="126" width="50"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="253" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">CTC</text>
-  <rect x="286" y="126" width="90"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
-  <text x="331" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">N-gram LM</text>
+  <text x="20" y="107" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#6F6670">Knowledge Graph drug adoption forecasting</text>
+  <rect x="20"  y="126" width="118" height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="79"  y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Knowledge Graph</text>
+  <rect x="146" y="126" width="62"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="177" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Neo4j</text>
+  <rect x="216" y="126" width="94"  height="27" rx="13.5" fill="#F3EDF7" stroke="#DDD0E5" stroke-width="1.2"/>
+  <text x="263" y="143.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#55405C" text-anchor="middle">Forecasting</text>
   <rect x="0" y="184" width="440" height="28" fill="url(#footer)" rx="0"/>
   <rect x="0" y="184" width="440" height="1.5" fill="#EBE0EE"/>
-  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">6.43% WER on LibriSpeech · Beam Search + N-gram LM decoding</text>
+  <text x="20" y="202" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#927394" font-weight="600">Explainable Graph Analytics · Springer IDBA 2026 Paper</text>
 </svg>

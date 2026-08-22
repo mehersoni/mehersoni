@@ -15,17 +15,9 @@
   <a href="mailto:mehersoni06@gmail.com">
     <img alt="Email" src="https://img.shields.io/badge/Email-mehersoni06%40gmail.com-F3EDF7?style=flat-square&logo=gmail&logoColor=55405C&labelColor=F3EDF7&color=EBE0EE" height="26"/>
   </a>
-  &nbsp;
-  <a href="[YOUR_LINKEDIN_URL]">
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/meher-soni-7a99bb296/">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-F3EDF7?style=flat-square&logo=linkedin&logoColor=55405C&labelColor=F3EDF7&color=EBE0EE" height="26"/>
-  </a>
-  &nbsp;
-  <a href="[YOUR_SCHOLAR_URL]">
-    <img alt="Google Scholar" src="https://img.shields.io/badge/Scholar-Publications-F3EDF7?style=flat-square&logo=google-scholar&logoColor=55405C&labelColor=F3EDF7&color=EBE0EE" height="26"/>
-  </a>
-  &nbsp;
-  <a href="[YOUR_PORTFOLIO_URL]">
-    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit-F3EDF7?style=flat-square&logo=firefox-browser&logoColor=55405C&labelColor=F3EDF7&color=EBE0EE" height="26"/>
   </a>
 </p>
 
@@ -45,27 +37,27 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" valign="top">
-      <a href="[YOUR_NYAYA_REPO_URL]">
+      <a href="https://github.com/mehersoni/Nyaya.AI">
         <img src="./assets/card_project_1.svg" alt="01 — NYAYA.AI" width="100%"/>
       </a>
     </td>
     <td width="2%"></td>
     <td width="48%" valign="top">
-      <a href="[YOUR_SPEECH_ASR_REPO_URL]">
-        <img src="./assets/card_project_2.svg" alt="02 — Speech-to-Text" width="100%"/>
+      <a href="https://github.com/mehersoni/PharmaDrishti">
+        <img src="./assets/card_project_2.svg" alt="02 — PharmaDrishti" width="100%"/>
       </a>
     </td>
   </tr>
   <tr><td colspan="3" height="10"></td></tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="[YOUR_INDIC_TTS_REPO_URL]">
-        <img src="./assets/card_project_3.svg" alt="03 — Indic Speech Front-End" width="100%"/>
+      <a href="https://github.com/mehersoni/DocIntel">
+        <img src="./assets/card_project_3.svg" alt="03 — DocIntel" width="100%"/>
       </a>
     </td>
     <td width="2%"></td>
     <td width="48%" valign="top">
-      <a href="[YOUR_SUDARSHANA_REPO_URL]">
+      <a href="https://github.com/mehersoni/Sudarshana">
         <img src="./assets/card_project_4.svg" alt="04 — SUDARSHANA" width="100%"/>
       </a>
     </td>
